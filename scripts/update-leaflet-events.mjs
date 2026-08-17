@@ -124,6 +124,21 @@ if (collected.length === 0 && previous > 0) {
   process.exit(1);
 }
 
+// 오류 없이 0건을 준 출처도 실패로 본다.
+//
+// 파리크라상은 GitHub 러너에서 예외 없이 빈 목록을 준다(집 IP에서는 1건 나온다).
+// 차단인지 정말 행사가 없는 건지 응답만으로는 구분할 수 없다. 어제 있던 행사가
+// 오늘 통째로 0건이 되는 쪽이 훨씬 드문 일이므로, 그때는 지우지 않고 남긴다.
+// 기간이 지난 것은 check-events.mjs가 EXPIRED로 표시하니 낡은 채 노출되지는 않는다.
+const countBy = (list, prefix) => list.filter((e) => e.id.startsWith(prefix)).length;
+for (const prefix of OWNED_PREFIXES) {
+  if (failedPrefixes.has(prefix)) continue;
+  if (countBy(collected, prefix) === 0 && countBy(existing, prefix) > 0) {
+    console.error(`  ${prefix} 수집 0건 — 어제는 있었습니다. 차단일 수 있어 기존 것을 남깁니다.`);
+    failedPrefixes.add(prefix);
+  }
+}
+
 // 수집에 실패한 출처는 기존 행사를 그대로 살린다. 실패는 "행사가 끝났다"가 아니라
 // "확인할 수 없다"이므로, 지워 버리면 앱에서 진행 중인 행사가 사라진다.
 const kept = existing.filter(
