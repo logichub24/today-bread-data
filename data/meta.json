@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-16T13:32:54.275Z",
+  "generatedAt": "2026-08-17T11:41:20.643Z",
   "counts": {
     "brands": 8,
+    "stores": 19989,
+    "events": 39,
     "breads": 100,
-    "recipes": 10,
-    "stores": 0,
-    "events": 40
+    "recipes": 10
   }
 }

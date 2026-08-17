@@ -10,6 +10,7 @@ import { readAllStores } from './lib/read-stores.mjs';
 const DATA_DIR = fileURLToPath(new URL('../data', import.meta.url));
 const STORE_DIR = fileURLToPath(new URL('../data/stores', import.meta.url));
 const STATUS_PATH = fileURLToPath(new URL('../STATUS.md', import.meta.url));
+const META_PATH = fileURLToPath(new URL('../data/meta.json', import.meta.url));
 
 const read = async (name) => JSON.parse(await readFile(`${DATA_DIR}/${name}.json`, 'utf8'));
 
@@ -121,7 +122,27 @@ ${ok ? '콘텐츠 볼륨은 모두 기준을 충족합니다.' : shortfalls.map(
 const previous = await readFile(STATUS_PATH, 'utf8').catch(() => '');
 await writeFile(STATUS_PATH, body);
 
-console.log(`STATUS.md 갱신 완료 (${today})`);
+// 앱이 "언제 갱신된 데이터인가"를 이 파일로 표시한다. 매일 수집 뒤 여기서 다시 쓰지 않으면
+// 갱신 시점이 처음 만든 날짜에 멈춰 사실과 달라진다. 매장 수도 여기서 실제로 세어 넣는다.
+await writeFile(
+  META_PATH,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      counts: {
+        brands: brands.length,
+        stores: stores.length,
+        events: events.length,
+        breads: breads.length,
+        recipes: recipes.length,
+      },
+    },
+    null,
+    2,
+  )}\n`,
+);
+
+console.log(`STATUS.md · meta.json 갱신 완료 (${today})`);
 console.log(Object.entries(counts).map(([k, v]) => `${k} ${v}`).join(' · '));
 if (previous === body) console.log('내용 변경 없음.');
 
