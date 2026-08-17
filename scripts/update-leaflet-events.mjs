@@ -23,6 +23,7 @@ import {
   BREADNCO_URL,
   DCAKE_URL,
   DUNKIN_URL,
+  ID_PREFIX,
   PARISCROISSANT_URL,
   TLJ_URL,
   fetchBreadncoEvents,
@@ -46,6 +47,14 @@ const collectedAt = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slic
 const collected = [];
 /** 날짜가 없어 상시인지 사람이 판단해야 하는 건. 등록하지 않고 보고만 한다. */
 const needsReview = [];
+/**
+ * 수집에 실패한 출처의 id 접두사.
+ *
+ * 이 스크립트는 소유 접두사를 전부 지우고 다시 넣는다. 그래서 한 브랜드가 실패하면
+ * 그 브랜드 행사가 조용히 사라진다. 실패는 "행사가 없어졌다"가 아니라 "확인할 수 없다"이므로,
+ * 실패한 접두사는 기존 것을 그대로 남긴다.
+ */
+const failedPrefixes = new Set();
 
 // --- 홈플러스 전단 (몽블랑제) ---
 try {
@@ -57,8 +66,9 @@ try {
   for (const e of events) console.log(`    ${e.title}`);
   collected.push(...events);
 } catch (err) {
-  // 한 출처가 막혀도 다른 출처는 진행한다. 전부 실패했을 때만 반영을 멈춘다.
+  // 한 출처가 막혀도 다른 출처는 진행한다. 실패한 것은 기존 데이터를 남긴다.
   console.error(`  홈플러스 전단 실패: ${err.message}`);
+  failedPrefixes.add('HP-');
 }
 
 // --- 파리바게뜨 공식 프로모션 ---
@@ -69,6 +79,7 @@ try {
   collected.push(...events);
 } catch (err) {
   console.error(`  파리바게뜨 실패: ${err.message}`);
+  failedPrefixes.add('PB-');
 }
 
 // --- 뚜레쥬르·던킨 공식 이벤트 ---
@@ -98,6 +109,7 @@ for (const src of [
     collected.push(...events);
   } catch (err) {
     console.error(`  ${src.brandName} 실패: ${err.message}`);
+    failedPrefixes.add(`${ID_PREFIX[src.brandId]}-`);
   }
 }
 
@@ -112,8 +124,19 @@ if (collected.length === 0 && previous > 0) {
   process.exit(1);
 }
 
-const next = [...manual, ...collected];
+// 수집에 실패한 출처는 기존 행사를 그대로 살린다. 실패는 "행사가 끝났다"가 아니라
+// "확인할 수 없다"이므로, 지워 버리면 앱에서 진행 중인 행사가 사라진다.
+const kept = existing.filter(
+  (e) => isOwned(e.id) && [...failedPrefixes].some((p) => e.id.startsWith(p)),
+);
+
+const next = [...manual, ...kept, ...collected];
 await writeFile(EVENTS_PATH, `${JSON.stringify(next, null, 2)}\n`);
+if (kept.length > 0) {
+  console.log('');
+  console.log(`수집 실패로 기존 행사를 유지한 출처 ${failedPrefixes.size}곳 — ${kept.length}건`);
+  console.log(`    접두사 ${[...failedPrefixes].join(', ')}`);
+}
 if (needsReview.length > 0) {
   console.log('');
   console.log(`⚠ 판단이 필요한 행사 ${needsReview.length}건 — 날짜가 없어 상시인지 알 수 없습니다.`);
@@ -122,5 +145,7 @@ if (needsReview.length > 0) {
   console.log('');
 }
 
-console.log(`반영 완료 — 직접 등록 ${manual.length}건 + 수집 ${collected.length}건 = ${next.length}건`);
-console.log(`(이전 수집분 ${previous}건은 교체했습니다)`);
+console.log(
+  `반영 완료 — 직접 등록 ${manual.length}건 + 유지 ${kept.length}건 + 수집 ${collected.length}건 = ${next.length}건`,
+);
+console.log(`(이전 수집분 ${previous}건 중 ${previous - kept.length}건을 교체했습니다)`);

@@ -88,8 +88,13 @@ export async function fetchDunkinEvents() {
   return out;
 }
 
-/** 브랜드별 행사 id 접두사. */
-const ID_PREFIX = { B002: 'TL', B003: 'DK', B005: 'BN', B006: 'PC', B009: 'DC' };
+/**
+ * 브랜드별 행사 id 접두사.
+ *
+ * 수집이 실패한 브랜드의 기존 행사만 남기려면 부르는 쪽도 접두사를 알아야 해서 내보낸다.
+ * 매핑을 두 곳에 두면 갈라진다.
+ */
+export const ID_PREFIX = { B002: 'TL', B003: 'DK', B005: 'BN', B006: 'PC', B009: 'DC' };
 
 /** 제목 전체로 짧고 안정적인 식별자를 만든다. */
 function titleHash(title) {
