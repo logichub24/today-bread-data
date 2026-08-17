@@ -1,0 +1,9 @@
+node_modules/
+_site/
+
+# 인증키. 절대 커밋하지 않는다.
+.env
+.env.local
+
+# 내려받은 원본 CSV(21MB). 매번 새로 받으므로 보관하지 않는다.
+*.csv

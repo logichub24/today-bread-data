@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-08-16",
+  "total": 19989,
+  "regions": [
+    {
+      "slug": "gyeonggi",
+      "name": "경기도",
+      "count": 4508,
+      "minLat": 36.958343,
+      "maxLat": 38.181273,
+      "minLng": 126.543235,
+      "maxLng": 127.755585
+    },
+    {
+      "slug": "seoul",
+      "name": "서울특별시",
+      "count": 4207,
+      "minLat": 37.434302,
+      "maxLat": 37.687082,
+      "minLng": 126.802052,
+      "maxLng": 127.180761
+    },
+    {
+      "slug": "gyeongnam",
+      "name": "경상남도",
+      "count": 1270,
+      "minLat": 34.728648,
+      "maxLat": 35.749689,
+      "minLng": 127.623398,
+      "maxLng": 129.197161
+    },
+    {
+      "slug": "jeonnam-gwangju",
+      "name": "전남광주통합특별시",
+      "count": 1204,
+      "minLat": 34.17674,
+      "maxLat": 35.429656,
+      "minLng": 125.93003,
+      "maxLng": 127.751929
+    },
+    {
+      "slug": "busan",
+      "name": "부산광역시",
+      "count": 1181,
+      "minLat": 35.04508969956558,
+      "maxLat": 35.365355,
+      "minLng": 128.8071984934235,
+      "maxLng": 129.282073
+    },
+    {
+      "slug": "gyeongbuk",
+      "name": "경상북도",
+      "count": 1084,
+      "minLat": 35.593802,
+      "maxLat": 37.500737,
+      "minLng": 127.94844,
+      "maxLng": 130.90887
+    },
+    {
+      "slug": "daegu",
+      "name": "대구광역시",
+      "count": 1001,
+      "minLat": 35.644466,
+      "maxLat": 36.240854,
+      "minLng": 128.409022,
+      "maxLng": 128.750848
+    },
+    {
+      "slug": "incheon",
+      "name": "인천광역시",
+      "count": 958,
+      "minLat": 37.260085,
+      "maxLat": 37.968649,
+      "minLng": 124.668362,
+      "maxLng": 126.758245
+    },
+    {
+      "slug": "chungnam",
+      "name": "충청남도",
+      "count": 898,
+      "minLat": 36.01112,
+      "maxLat": 37.013063,
+      "minLng": 126.230343,
+      "maxLng": 127.499329
+    },
+    {
+      "slug": "gangwon",
+      "name": "강원특별자치도",
+      "count": 696,
+      "minLat": 37.101819,
+      "maxLat": 38.447318,
+      "minLng": 127.216134,
+      "maxLng": 129.336252
+    },
+    {
+      "slug": "daejeon",
+      "name": "대전광역시",
+      "count": 630,
+      "minLat": 36.223972,
+      "maxLat": 36.456192,
+      "minLng": 127.289808,
+      "maxLng": 127.474081
+    },
+    {
+      "slug": "jeonbuk",
+      "name": "전북특별자치도",
+      "count": 630,
+      "minLat": 35.339188,
+      "maxLat": 36.118089,
+      "minLng": 125.981944,
+      "maxLng": 127.787454
+    },
+    {
+      "slug": "jeju",
+      "name": "제주특별자치도",
+      "count": 612,
+      "minLat": 33.209882,
+      "maxLat": 33.563511,
+      "minLng": 126.168618,
+      "maxLng": 126.945111
+    },
+    {
+      "slug": "chungbuk",
+      "name": "충청북도",
+      "count": 588,
+      "minLat": 36.171692,
+      "maxLat": 37.170807,
+      "minLng": 127.313848,
+      "maxLng": 128.370113
+    },
+    {
+      "slug": "ulsan",
+      "name": "울산광역시",
+      "count": 381,
+      "minLat": 35.348805,
+      "maxLat": 35.653085,
+      "minLng": 129.09103,
+      "maxLng": 129.455495
+    },
+    {
+      "slug": "sejong",
+      "name": "세종특별자치시",
+      "count": 141,
+      "minLat": 36.439733,
+      "maxLat": 36.732319,
+      "minLng": 127.151042,
+      "maxLng": 127.369356
+    }
+  ]
+}

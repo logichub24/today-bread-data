@@ -1,0 +1,74 @@
+[
+  {
+    "id": "B001",
+    "name": "파리바게뜨",
+    "slug": "paris-baguette",
+    "color": "#1D3A6F",
+    "websiteUrl": "https://www.paris.co.kr",
+    "active": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "B002",
+    "name": "뚜레쥬르",
+    "slug": "tous-les-jours",
+    "color": "#1E4631",
+    "websiteUrl": "https://www.tlj.co.kr",
+    "active": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "B003",
+    "name": "던킨",
+    "slug": "dunkin",
+    "color": "#ED6D24",
+    "websiteUrl": "https://www.dunkindonuts.co.kr",
+    "active": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "B007",
+    "name": "베이커리팩토리",
+    "slug": "bakery-factory",
+    "color": "#7A5C3E",
+    "websiteUrl": "https://www.bakeryfactory.co.kr",
+    "active": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "B008",
+    "name": "몽블랑제",
+    "slug": "mont-blanger",
+    "color": "#B02A30",
+    "websiteUrl": "https://mfront.homeplus.co.kr/leaflet",
+    "active": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "B005",
+    "name": "브레댄코",
+    "slug": "breadnco",
+    "color": "#8C5A32",
+    "websiteUrl": "https://www.breadnco.kr",
+    "active": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "B006",
+    "name": "파리크라상",
+    "slug": "paris-croissant",
+    "color": "#3E4A5B",
+    "websiteUrl": "https://pariscroissantorder.com",
+    "active": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "B009",
+    "name": "떡보의하루",
+    "slug": "dcake",
+    "color": "#7B4B2A",
+    "websiteUrl": "https://www.dcake.co.kr",
+    "active": true,
+    "sortOrder": 8
+  }
+]

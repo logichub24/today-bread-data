@@ -1,0 +1,8668 @@
+[
+  {
+    "id": "BR001",
+    "name": "소금빵",
+    "aliases": [
+      "시오빵",
+      "시오팡",
+      "소금 빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🥐",
+    "description": "버터의 풍미와 짭조름한 펄솔트가 어우러진 빵",
+    "texture": "겉은 바삭, 속은 촉촉",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "밀봉해 서늘한 곳에 두고 당일 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "전분이 빠르게 굳어 식감이 질겨집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣어 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 에어프라이어에 굽는 편이 식감이 좋습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "이미 맛있으니 살짝만 데우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 300,
+          "maxSec": 360,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "버터가 녹아 부드러워지지만 바삭함은 줄어듭니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "약불에서 뚜껑을 덮고 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "짭짤한 버터 풍미를 산미 있는 커피가 깔끔하게 정리해 줍니다.",
+    "tip": "구운 뒤 1분만 식히면 겉면 버터가 다시 굳어 훨씬 바삭해집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "소금빵",
+      "시오빵",
+      "버터",
+      "에어프라이어",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR002",
+    "name": "통식빵",
+    "aliases": [
+      "식빵",
+      "토스트빵",
+      "풀먼식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "결대로 찢어 먹는 부드럽고 촉촉한 기본 식빵",
+    "texture": "부드럽고 폭신함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "냉장은 전분 노화를 가장 빠르게 만듭니다. 피하세요.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 종이호일로 나눠 지퍼백에 넣으면 필요한 만큼만 꺼낼 수 있습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 토스터나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 180,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 270,
+          "maxSec": 330,
+          "note": "해동 없이 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "수분이 날아가 금세 질겨집니다. 토스터를 쓰세요."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "수분이 날아가 금세 질겨집니다. 토스터를 쓰세요."
+        },
+        "FRIDGE": {
+          "minSec": 15,
+          "maxSec": 20,
+          "note": "젖은 키친타월을 덮고 짧게만 돌리세요."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 100,
+          "maxSec": 140
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 150,
+          "maxSec": 200,
+          "note": "냉동 상태 그대로 넣으세요."
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "버터를 약간 두르고 약불에서 양면을 구우세요."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 카페라떼"
+    ],
+    "drinkReason": "담백해서 어떤 음료와도 어울리며 우유가 가장 무난합니다.",
+    "tip": "수분이 날아간 식빵은 굽지 말고 프렌치토스트로 살리는 편이 낫습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "식빵",
+      "통식빵",
+      "토스트",
+      "냉동",
+      "보관"
+    ]
+  },
+  {
+    "id": "BR003",
+    "name": "베이글",
+    "aliases": [
+      "베이글빵",
+      "bagel"
+    ],
+    "category": "식사빵",
+    "emoji": "🥯",
+    "description": "쫄깃하고 담백한 뉴욕 스타일 베이글",
+    "texture": "쫄깃하고 밀도가 높음",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 실온에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "쫄깃함이 사라지고 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "반으로 가로로 자른 뒤 냉동하면 바로 구워 먹기 좋습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "자른 면에 물을 살짝 뿌린 뒤 해동 없이 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "물을 살짝 뿌리면 촉촉해집니다."
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "반으로 자른 상태로 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "DAY_OLD": {
+          "minSec": 20,
+          "maxSec": 30,
+          "note": "물을 뿌리고 랩을 덮으면 쫄깃함이 살아납니다."
+        },
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 35
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 60
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 100,
+          "maxSec": 140,
+          "note": "자른 면이 위로 오게 넣으세요."
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 160,
+          "maxSec": 220
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 카페라떼",
+      "아메리카노"
+    ],
+    "drinkReason": "담백하고 밀도가 높아 우유가 들어간 커피와 균형이 잘 맞습니다.",
+    "tip": "굽기 전 물을 살짝 스프레이하면 겉은 바삭, 속은 촉촉한 전문점 식감이 됩니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "베이글",
+      "쫄깃",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR004",
+    "name": "크루아상",
+    "aliases": [
+      "크로아상",
+      "croissant"
+    ],
+    "category": "페이스트리",
+    "emoji": "🥐",
+    "description": "버터 결이 겹겹이 살아있는 프랑스 대표 페이스트리",
+    "texture": "겉바속촉, 결이 부서짐",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "습기에 약합니다. 서늘하고 건조한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "냉장고 습기를 먹어 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "개별 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 10분 두었다가 에어프라이어로 마무리하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "겉이 얇아 쉽게 탑니다. 온도를 낮게 두세요."
+        },
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "FROZEN": {
+          "minSec": 20,
+          "maxSec": 30,
+          "note": "해동만 하고 반드시 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 300,
+          "maxSec": 360
+        }
+      }
+    },
+    "drinks": [
+      "얼그레이 홍차",
+      "카페라떼"
+    ],
+    "drinkReason": "버터 향이 진해서 향이 뚜렷한 홍차와 잘 맞습니다.",
+    "tip": "구운 직후보다 1~2분 식힌 뒤가 결이 가장 바삭합니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "크루아상",
+      "페이스트리",
+      "버터",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR005",
+    "name": "바게트",
+    "aliases": [
+      "바게뜨",
+      "baguette",
+      "프랑스빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🥖",
+    "description": "겉은 단단하고 속은 쫄깃한 프랑스 정통 빵",
+    "texture": "겉이 단단하고 속은 쫄깃",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "종이봉투에 넣어 두세요. 비닐은 겉면을 눅눅하게 만듭니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "가장 빠르게 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "먹을 만큼 슬라이스해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "겉면에 물을 살짝 묻힌 뒤 오븐이나 에어프라이어로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "겉면을 물에 1초 적신 뒤 구우면 갓 구운 식감이 됩니다."
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 330
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "슬라이스 기준입니다."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "질기고 고무 같은 식감이 됩니다."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "질기고 고무 같은 식감이 됩니다."
+        },
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "질기고 고무 같은 식감이 됩니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동만 하고 반드시 오븐이나 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 360,
+          "maxSec": 480,
+          "note": "겉면을 살짝 적신 뒤 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 수프",
+      "드립 커피"
+    ],
+    "drinkReason": "담백하고 짠맛이 적어 수프에 곁들이기 좋습니다.",
+    "tip": "돌처럼 굳은 바게트는 겉면을 흐르는 물에 1초 적신 뒤 170℃에서 7분 구우면 되살아납니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "바게트",
+      "바게뜨",
+      "마늘빵",
+      "크루통",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR006",
+    "name": "단팥빵",
+    "aliases": [
+      "앙금빵",
+      "팥빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍩",
+    "description": "달콤한 팥앙금이 가득 든 부드러운 간식빵",
+    "texture": "부드럽고 촉촉",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "여름철에는 팥이 쉽게 상합니다. 당일 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "여름철에는 실온보다 냉장이 안전합니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "개별 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "전자레인지로 살짝 해동하면 앙금이 부드러워집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 300,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "DAY_OLD": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 35
+        },
+        "FROZEN": {
+          "minSec": 50,
+          "maxSec": 70
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "녹차"
+    ],
+    "drinkReason": "단맛이 강해 녹차의 쌉싸름함이 균형을 잡아줍니다.",
+    "tip": "냉동한 단팥빵을 살짝만 해동해 차갑게 먹으면 아이스크림 같은 식감이 납니다.",
+    "caution": "앙금은 빵보다 훨씬 뜨거워집니다. 오래 데우면 화상 위험이 있으니 짧게 나눠 데우세요.",
+    "soloFriendly": true,
+    "tags": [
+      "단팥빵",
+      "팥",
+      "간식빵",
+      "전자레인지"
+    ]
+  },
+  {
+    "id": "BR007",
+    "name": "치아바타",
+    "aliases": [
+      "챠바타",
+      "ciabatta"
+    ],
+    "category": "식사빵",
+    "emoji": "🥪",
+    "description": "구멍이 숭숭 뚫린 담백한 이탈리아 식사빵",
+    "texture": "쫄깃하고 기공이 큼",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "종이봉투에 넣어 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "푸석해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "슬라이스해 냉동하면 샌드위치용으로 쓰기 좋습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "기공이 무너지고 질겨집니다."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "기공이 무너지고 질겨집니다."
+        },
+        "FRIDGE": {
+          "minSec": 15,
+          "maxSec": 20,
+          "note": "젖은 키친타월을 덮고 짧게만 돌리세요."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "올리브유를 두르고 약불에서 눌러 구우세요."
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "기름기 있는 속재료와 함께 먹는 경우가 많아 깔끔한 음료가 맞습니다.",
+    "tip": "가로로 갈라 올리브유를 바르고 구우면 파니니 식감이 납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "치아바타",
+      "샌드위치",
+      "식사빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR008",
+    "name": "깜빠뉴",
+    "aliases": [
+      "캉파뉴",
+      "campagne",
+      "시골빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "통밀과 호밀이 섞인 묵직한 유럽식 시골빵",
+    "texture": "단단하고 쫄깃",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "자른 면을 아래로 두고 종이봉투에 보관하세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "푸석해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "슬라이스해 냉동하면 오래 갑니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "밀도가 높아 전자레인지로 데우면 매우 질겨집니다."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "밀도가 높아 전자레인지로 데우면 매우 질겨집니다."
+        },
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "밀도가 높아 전자레인지로 데우면 매우 질겨집니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동만 하고 오븐으로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 160,
+          "note": "얇게 썰어 넣으세요."
+        }
+      }
+    },
+    "drinks": [
+      "드립 커피",
+      "따뜻한 수프"
+    ],
+    "drinkReason": "산미 있는 빵이라 커피의 산미와 결이 맞습니다.",
+    "tip": "얇게 썰어 올리브유와 소금만 곁들여도 충분합니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "깜빠뉴",
+      "시골빵",
+      "호밀",
+      "통밀",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR009",
+    "name": "모닝빵",
+    "aliases": [
+      "모닝롤",
+      "테이블롤"
+    ],
+    "category": "식사빵",
+    "emoji": "🥟",
+    "description": "작고 부드러워 무엇과도 잘 어울리는 기본 롤빵",
+    "texture": "폭신하고 부드러움",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 실온에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "금세 푸석해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "봉지째 밀봉해 냉동해도 괜찮습니다.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 10분이면 해동됩니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 270
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FRIDGE": {
+          "minSec": 15,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "PAN": {
+        "FRESH": {
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "반으로 갈라 약불에서 단면을 구우세요."
+        },
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "수프"
+    ],
+    "drinkReason": "맛이 강하지 않아 어떤 음료와도 부딪히지 않습니다.",
+    "tip": "반으로 갈라 계란과 채소를 넣으면 바로 아침 샌드위치가 됩니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "모닝빵",
+      "롤빵",
+      "샌드위치",
+      "프라이팬"
+    ]
+  },
+  {
+    "id": "BR010",
+    "name": "우유식빵",
+    "aliases": [
+      "밀크식빵",
+      "생식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "우유 함량이 높아 촉촉하고 은은하게 단 식빵",
+    "texture": "매우 부드럽고 촉촉",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 실온에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "냉장은 노화를 앞당깁니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 나눠 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 굽거나 실온 15분이면 그대로 먹을 수 있습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "원래 촉촉해서 오래 구울 필요가 없습니다."
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12
+        },
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FRIDGE": {
+          "minSec": 15,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "약하게",
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "당분이 많아 쉽게 탑니다."
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "FROZEN": {
+          "level": "보통",
+          "minSec": 130,
+          "maxSec": 170
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "홍차"
+    ],
+    "drinkReason": "우유 풍미가 강해 같은 결의 음료와 자연스럽게 이어집니다.",
+    "tip": "당분이 많아 잘 탑니다. 다른 식빵보다 한 단계 약하게 구우세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "우유식빵",
+      "식빵",
+      "생식빵",
+      "토스터"
+    ]
+  },
+  {
+    "id": "BR011",
+    "name": "크림빵",
+    "aliases": [
+      "슈크림빵",
+      "커스터드빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🧁",
+    "description": "부드러운 커스터드 크림이 들어간 간식빵",
+    "texture": "부드럽고 크림이 촉촉",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "크림은 실온에서 빠르게 상합니다. 실온 보관은 피하세요.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "반드시 냉장 보관하고 이틀 안에 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "크림 종류에 따라 해동 후 분리될 수 있습니다.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장실에서 천천히 해동해야 크림이 덜 분리됩니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "크림이 흘러나올 수 있어 낮은 온도로 짧게 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "크림이 매우 뜨거워집니다. 짧게 나눠 데우세요."
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "크림의 단맛을 쓴맛이 있는 음료가 눌러줍니다.",
+    "tip": "차갑게 먹는 편이 크림 식감이 가장 좋습니다. 굳이 데울 필요가 없습니다.",
+    "caution": "크림 제품은 냉동 적합도가 낮습니다. 해동 시 물이 생기거나 크림이 분리될 수 있습니다.",
+    "soloFriendly": true,
+    "tags": [
+      "크림빵",
+      "슈크림",
+      "냉장",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR012",
+    "name": "소보로빵",
+    "aliases": [
+      "곰보빵",
+      "스트로이젤"
+    ],
+    "category": "간식빵",
+    "emoji": "🍪",
+    "description": "바삭한 소보로 토핑이 올라간 추억의 간식빵",
+    "texture": "겉은 바삭, 속은 부드러움",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉하면 소보로가 눅눅해집니다. 종이봉투가 낫습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "토핑이 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "개별 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 에어프라이어로 구우면 소보로가 다시 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "소보로가 되살아납니다."
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "소보로 토핑이 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "소보로 토핑이 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "FRIDGE": {
+          "minSec": 15,
+          "maxSec": 20,
+          "note": "속만 데워지고 토핑은 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 50,
+          "note": "해동만 하고 에어프라이어로 마무리하세요."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아메리카노"
+    ],
+    "drinkReason": "토핑의 단맛과 버석한 식감을 우유가 부드럽게 받아줍니다.",
+    "tip": "눅눅해진 소보로는 에어프라이어 160℃ 3분이면 대부분 되살아납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "소보로",
+      "곰보빵",
+      "간식빵",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR013",
+    "name": "맘모스빵",
+    "aliases": [
+      "맘모스",
+      "대형빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🥮",
+    "description": "크림과 팥이 함께 들어간 큼직한 옛날 빵",
+    "texture": "푹신하고 속재료가 많음",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "크기가 커서 속까지 마르기 전에 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "크림이 들어 있어 여름철에는 냉장이 안전합니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "먹을 만큼 잘라서 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "잘라서 냉동한 뒤 조각 단위로 해동하는 편이 좋습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 240,
+          "maxSec": 300
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 330,
+          "maxSec": 420,
+          "note": "크고 두꺼워 속까지 데우는 데 시간이 걸립니다."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 15,
+          "maxSec": 25
+        },
+        "DAY_OLD": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FRIDGE": {
+          "minSec": 30,
+          "maxSec": 45
+        },
+        "FROZEN": {
+          "minSec": 60,
+          "maxSec": 90
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아메리카노"
+    ],
+    "drinkReason": "단맛이 매우 강해 무가당 음료가 잘 맞습니다.",
+    "tip": "한 번에 다 먹기 어려운 크기입니다. 사자마자 잘라 나눠 냉동하세요.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "맘모스빵",
+      "크림",
+      "팥",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR014",
+    "name": "데니쉬",
+    "aliases": [
+      "데니시",
+      "danish",
+      "페스츄리"
+    ],
+    "category": "페이스트리",
+    "emoji": "🥧",
+    "description": "버터 결 위에 과일이나 크림이 올라간 페이스트리",
+    "texture": "겹겹이 바삭",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "토핑이 있는 제품은 실온에 오래 두지 마세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "크림·과일 토핑 제품은 냉장이 안전합니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "토핑 없는 제품만 냉동을 권합니다.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "실온 10분 후 에어프라이어로 마무리하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "토핑이 타지 않게 낮은 온도로 구우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 270,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다."
+        },
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40,
+          "note": "해동만 하고 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "얼그레이 홍차"
+    ],
+    "drinkReason": "버터와 단맛이 진해 쓴맛이나 향이 뚜렷한 음료가 어울립니다.",
+    "tip": "과일 토핑은 데우면 물이 생깁니다. 토핑 부분은 데우지 말고 빵만 데우세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "데니쉬",
+      "페이스트리",
+      "버터",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR015",
+    "name": "카스텔라",
+    "aliases": [
+      "카스테라",
+      "castella"
+    ],
+    "category": "케이크류",
+    "emoji": "🍰",
+    "description": "계란 향이 진하고 폭신한 일본식 스펀지 케이크",
+    "texture": "폭신하고 촉촉",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 실온에 두면 촉촉함이 유지됩니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "푸석해집니다. 냉장은 피하세요.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "조각내어 밀봉 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분이면 자연 해동됩니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "오래 구우면 금세 마릅니다."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "살짝만 데우면 갓 만든 촉감이 됩니다."
+        },
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40
+        }
+      }
+    },
+    "drinks": [
+      "녹차",
+      "흰 우유"
+    ],
+    "drinkReason": "계란과 설탕 맛이 진해 녹차가 가장 무난하게 정리해 줍니다.",
+    "tip": "냉동한 카스텔라를 반쯤 해동해 먹으면 아이스크림 같은 식감이 납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "카스텔라",
+      "케이크",
+      "간식",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR016",
+    "name": "머핀",
+    "aliases": [
+      "마핀",
+      "muffin",
+      "컵케이크"
+    ],
+    "category": "케이크류",
+    "emoji": "🧁",
+    "description": "한 손에 들고 먹기 좋은 촉촉한 구움과자",
+    "texture": "촉촉하고 묵직",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 실온에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 5,
+        "note": "유제품 토핑이 있으면 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "개별 밀봉 냉동에 매우 적합합니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "실온 20분 또는 전자레인지 20초면 충분합니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "카페라떼"
+    ],
+    "drinkReason": "버터와 설탕이 많아 무가당 커피와 균형이 맞습니다.",
+    "tip": "전자레인지 15초면 갓 구운 것처럼 속이 촉촉해집니다. 1인 가구에 가장 편한 빵입니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "머핀",
+      "컵케이크",
+      "냉동",
+      "전자레인지"
+    ]
+  },
+  {
+    "id": "BR017",
+    "name": "도넛",
+    "aliases": [
+      "도너츠",
+      "donut",
+      "글레이즈드"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍩",
+    "description": "튀긴 반죽에 글레이즈나 토핑을 올린 대표 간식",
+    "texture": "폭신하고 기름기가 있음",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "튀김 제품이라 당일 섭취를 권합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "기름이 굳어 식감이 떨어집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 14,
+        "note": "글레이즈가 녹아 흐를 수 있습니다.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 2,
+      "thawNote": "실온에서 15분 해동하고 데우지 않는 편이 낫습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 120,
+          "note": "글레이즈가 녹아 흐를 수 있습니다. 짧게만 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "5초씩 나눠 확인하세요. 금세 질겨집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "단맛과 기름기가 강해 무가당 커피가 가장 잘 맞습니다.",
+    "tip": "도넛은 데울수록 나빠지는 쪽에 가깝습니다. 실온에서 15분 두는 편이 낫습니다.",
+    "caution": "글레이즈·초콜릿 토핑 제품은 가열 시 녹아 흐르고 매우 뜨거워집니다.",
+    "soloFriendly": true,
+    "tags": [
+      "도넛",
+      "도너츠",
+      "던킨",
+      "간식"
+    ]
+  },
+  {
+    "id": "BR018",
+    "name": "꽈배기",
+    "aliases": [
+      "꽈베기",
+      "트위스트도넛"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🥨",
+    "description": "설탕을 묻힌 쫄깃한 튀김 도넛",
+    "texture": "쫄깃하고 겉에 설탕이 묻음",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "당일 섭취를 권합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "기름이 굳어 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "설탕을 털어내고 밀봉 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 에어프라이어로 구우면 겉이 다시 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름기가 빠지면서 다시 바삭해집니다."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "부드러워지지만 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 50
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아메리카노"
+    ],
+    "drinkReason": "기름지고 달아 담백한 음료가 필요합니다.",
+    "tip": "눅눅해진 꽈배기는 에어프라이어 160℃ 2~3분이면 대부분 살아납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "꽈배기",
+      "도넛",
+      "튀김",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR019",
+    "name": "마늘빵",
+    "aliases": [
+      "갈릭브레드",
+      "마늘바게트"
+    ],
+    "category": "식사빵",
+    "emoji": "🧄",
+    "description": "마늘버터를 바른 짭짤하고 고소한 빵",
+    "texture": "겉은 바삭, 속은 촉촉",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "버터가 들어 있어 실온에 오래 두지 마세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "마늘버터 제품은 냉장이 안전합니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "냉동 적합도가 높습니다. 바로 구워 먹기 좋습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 300,
+          "maxSec": 360,
+          "note": "해동 없이 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "버터가 녹아 눅눅해지고 바삭함이 사라집니다."
+        },
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "버터가 녹아 눅눅해지고 바삭함이 사라집니다."
+        },
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "버터가 녹아 눅눅해지고 바삭함이 사라집니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동만 하고 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "FRESH": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "약불에서 단면을 아래로 두고 구우세요."
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "아메리카노"
+    ],
+    "drinkReason": "기름지고 짭짤해서 입안을 정리해 주는 음료가 필요합니다.",
+    "tip": "딱딱해진 바게트로 직접 만들면 남은 빵 처리와 마늘빵을 동시에 해결할 수 있습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "마늘빵",
+      "갈릭브레드",
+      "바게트",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR020",
+    "name": "피자빵",
+    "aliases": [
+      "피자브레드",
+      "피자번"
+    ],
+    "category": "간식빵",
+    "emoji": "🍕",
+    "description": "토마토소스와 치즈, 야채가 올라간 식사 대용 빵",
+    "texture": "부드럽고 토핑이 촉촉",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "토핑에 유제품과 야채가 있어 실온 보관은 위험합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "반드시 냉장 보관하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "개별 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 에어프라이어로 구워야 치즈가 다시 녹습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "치즈가 다시 녹아 갓 구운 상태가 됩니다."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 330,
+          "maxSec": 420
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 35,
+          "note": "빵이 질겨집니다. 에어프라이어를 권합니다."
+        },
+        "FROZEN": {
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "해동만 하고 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 480,
+          "maxSec": 600
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아메리카노"
+    ],
+    "drinkReason": "기름진 토핑을 탄산이 개운하게 정리해 줍니다.",
+    "tip": "전자레인지로 데우면 빵이 질겨집니다. 에어프라이어가 확실히 낫습니다.",
+    "caution": "유제품과 야채 토핑이 있어 실온에 오래 두면 상하기 쉽습니다. 반드시 냉장하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "피자빵",
+      "치즈",
+      "식사대용",
+      "냉장",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR021",
+    "name": "고로케",
+    "aliases": [
+      "크로켓",
+      "croquette",
+      "야채고로케"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🥔",
+    "description": "빵가루를 입혀 튀긴 속이 꽉 찬 튀김빵",
+    "texture": "겉은 바삭, 속은 부드러움",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "속재료가 상하기 쉬워 실온 보관은 권하지 않습니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "냉장 보관하고 이틀 안에 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "개별 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 에어프라이어로 구워야 겉이 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "튀김옷이 다시 바삭해집니다."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 360,
+          "maxSec": 480,
+          "note": "속까지 뜨거운지 확인하세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "튀김옷이 눅눅해집니다. 에어프라이어를 쓰세요."
+        },
+        "FROZEN": {
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "해동만 하고 반드시 에어프라이어로 마무리하세요."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 360,
+          "maxSec": 480
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 540,
+          "maxSec": 720
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "흰 우유"
+    ],
+    "drinkReason": "기름진 튀김이라 탄산수가 입안을 개운하게 해 줍니다.",
+    "tip": "냉동 고로케는 반드시 속까지 뜨거워졌는지 확인하고 드세요.",
+    "caution": "고기·해산물이 든 제품은 속까지 완전히 가열해야 합니다. 겉만 뜨거운 상태로 드시지 마세요.",
+    "soloFriendly": true,
+    "tags": [
+      "고로케",
+      "크로켓",
+      "튀김",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR022",
+    "name": "밤식빵",
+    "aliases": [
+      "밤 식빵",
+      "밤빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🌰",
+    "description": "달콤한 밤 조림이 콕콕 박힌 부드러운 식빵",
+    "texture": "폭신하고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밤 조림의 수분 때문에 기본 식빵보다 빨리 상합니다. 밀봉해 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "빵 부분이 먼저 퍽퍽해집니다. 오래 둘 거면 냉동이 낫습니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 종이호일로 나눠 지퍼백에 넣으면 필요한 만큼만 꺼낼 수 있습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 토스터나 에어프라이어에 구우세요. 밤이 뜨거우니 한 김 식혀 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "밤 부분이 먼저 뜨거워집니다. 짧게 끊어 데우세요."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰고 마무리는 토스터로 하세요."
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "보리차"
+    ],
+    "drinkReason": "밤의 은은한 단맛을 고소한 음료가 눌러 주어 물리지 않습니다.",
+    "tip": "밤이 몰린 가운데보다 가장자리부터 구우면 겉이 타지 않고 속까지 데워집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "밤식빵",
+      "밤",
+      "식빵",
+      "냉동",
+      "토스터"
+    ]
+  },
+  {
+    "id": "BR023",
+    "name": "옥수수식빵",
+    "aliases": [
+      "콘식빵",
+      "옥수수 식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🌽",
+    "description": "옥수수 알갱이가 씹히는 촉촉하고 달큰한 식빵",
+    "texture": "촉촉하고 쫀득함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "옥수수 수분이 많아 여름에는 하루 안에 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "알갱이가 질겨지고 빵은 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 나눠 밀봉하면 알갱이 식감이 비교적 잘 남습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 구우세요. 실온 해동하면 물기가 배어 눅눅해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "약불에서 뚜껑을 덮으면 속이 촉촉하게 살아납니다."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "옥수수의 단맛이 우유와 겹쳐 부드럽게 이어집니다.",
+    "tip": "마요네즈가 올라간 제품은 에어프라이어보다 토스터가 덜 튑니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "옥수수식빵",
+      "콘",
+      "식빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR024",
+    "name": "흑미식빵",
+    "aliases": [
+      "흑미 식빵",
+      "검은쌀식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "흑미를 넣어 구수하고 담백한 회보라빛 식빵",
+    "texture": "쫀득하고 담백함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요. 기본 식빵과 비슷하게 갑니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "전분 노화가 빨라져 부슬부슬해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 나눠 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 토스터에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 180,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름 없이 약불에서 앞뒤로 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "두유",
+      "녹차"
+    ],
+    "drinkReason": "단맛이 적어 곡물 음료나 차와 두면 구수함이 살아납니다.",
+    "tip": "단맛이 약해 잼이나 버터를 올려도 균형이 무너지지 않습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "흑미식빵",
+      "흑미",
+      "곡물",
+      "식빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR025",
+    "name": "감자식빵",
+    "aliases": [
+      "감자 식빵",
+      "포테이토식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🥔",
+    "description": "감자를 반죽에 넣어 촉촉하고 쫀득한 식빵",
+    "texture": "촉촉하고 묵직함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "수분이 많아 여름에는 곰팡이가 빨리 핍니다. 밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "냉장은 전분 노화를 앞당깁니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 나눠 밀봉하면 촉촉함이 잘 남습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "수분이 많아 과하게 돌리면 질겨집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "약불에서 뚜껑을 덮고 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "담백하고 묵직해 어떤 음료와도 무난하게 맞습니다.",
+    "tip": "살짝 구워 버터만 올려도 감자 향이 또렷해집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "감자식빵",
+      "감자",
+      "식빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR026",
+    "name": "치즈식빵",
+    "aliases": [
+      "치즈 식빵",
+      "체다식빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🧀",
+    "description": "치즈를 통째로 넣어 짭조름하게 늘어나는 식빵",
+    "texture": "부드럽고 쫄깃함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "유제품이 들어 있어 실온에 오래 두지 마세요. 당일 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "치즈가 들어간 빵은 냉장이 안전합니다. 빵은 굳지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 조각씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 구우세요. 치즈가 녹아 흐를 수 있으니 종이호일을 깔면 좋습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "치즈가 녹을 정도만 데우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "치즈가 빠르게 뜨거워집니다. 짧게 끊어 데우세요."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 50,
+          "maxSec": 70,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "짭짤하고 기름진 맛을 산미나 탄산이 정리해 줍니다.",
+    "tip": "녹은 치즈는 매우 뜨겁습니다. 데운 뒤 1~2분 두고 드세요.",
+    "caution": "유제품이 들어 있어 실온에 오래 두면 상하기 쉽습니다. 여름철에는 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "치즈식빵",
+      "치즈",
+      "식빵",
+      "냉장",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR027",
+    "name": "브리오슈",
+    "aliases": [
+      "브리오쉬",
+      "brioche"
+    ],
+    "category": "페이스트리",
+    "emoji": "🥐",
+    "description": "버터와 달걀을 듬뿍 넣어 결이 곱고 윤기 나는 빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "버터가 많아 밀봉해 두면 이틀까지는 부드럽습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "버터가 굳어 퍽퍽해집니다. 피하세요.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 20~30분 두었다가 살짝 데우면 버터 향이 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "버터가 많아 낮은 온도로 짧게 데우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "오래 돌리면 버터가 빠져 질겨집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "약하게",
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "설탕과 버터가 많아 쉽게 탑니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 홍차",
+      "카페라떼"
+    ],
+    "drinkReason": "진한 버터 풍미를 홍차의 떫은맛이 산뜻하게 끊어 줍니다.",
+    "tip": "결을 살리려면 칼로 자르지 말고 손으로 찢어 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "브리오슈",
+      "버터",
+      "페이스트리",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR028",
+    "name": "버터롤",
+    "aliases": [
+      "버터 롤",
+      "롤빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🥐",
+    "description": "반죽을 말아 구운 작고 부드러운 버터 향 빵",
+    "texture": "부드럽고 폭신함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "작아서 마르기 쉽습니다. 밀봉해 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "금세 퍽퍽해집니다. 오래 둘 거면 냉동하세요.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 갓 구운 것과 비슷해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 150
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "작아서 금방 뜨거워집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "반으로 갈라 단면을 약불에 지지면 고소해집니다."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "단맛이 약해 어떤 음료와도 부딪히지 않습니다.",
+    "tip": "반으로 갈라 달걀이나 햄을 끼우면 그대로 샌드위치가 됩니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "버터롤",
+      "롤빵",
+      "버터",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR029",
+    "name": "모카빵",
+    "aliases": [
+      "모카 빵",
+      "커피빵"
+    ],
+    "category": "간식빵",
+    "emoji": "☕",
+    "description": "커피 향 쿠키 반죽을 씌워 겉이 바삭한 달콤한 빵",
+    "texture": "겉은 바삭, 속은 촉촉",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉하면 속은 촉촉하지만 겉껍질은 눅눅해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "쿠키 껍질이 눅눅해지고 빵은 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 껍질이 다시 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "겉껍질만 살짝 살리면 됩니다."
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "속은 데워지지만 겉껍질은 더 눅눅해집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 390
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "약하게",
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "쿠키 껍질에 설탕이 많아 쉽게 탑니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "커피 향이 겹쳐 서로를 밀어내지 않고 이어집니다.",
+    "tip": "구운 뒤 1~2분 식히면 껍질이 굳어 바삭함이 오래갑니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "모카빵",
+      "커피",
+      "간식빵",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR030",
+    "name": "호밀빵",
+    "aliases": [
+      "라이 브레드",
+      "호밀 빵",
+      "rye"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "호밀 특유의 시큼함과 묵직한 밀도가 있는 유럽식 빵",
+    "texture": "단단하고 쫀득함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 4,
+        "note": "자른 단면을 아래로 두고 종이봉투에 담아 두면 껍질이 살아 있습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "수분이 빠져 부슬부슬해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 60,
+        "note": "먹을 만큼 잘라 한 조각씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 20분 두었다가 살짝 구우면 껍질이 다시 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "잘라서 단면이 위로 오게 두세요."
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "밀도가 높아 전자레인지에 데우면 고무처럼 질겨집니다."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "겉면에 물을 살짝 뿌리고 구우면 껍질이 살아납니다."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 360,
+          "maxSec": 480
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "바삭",
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름 없이 약불에서 단면을 지지세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "수프"
+    ],
+    "drinkReason": "신맛과 밀도가 강해 담백한 음료나 국물과 두면 균형이 맞습니다.",
+    "tip": "얇게 썰수록 먹기 편합니다. 두껍게 자르면 신맛과 묵직함이 부담스러워집니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "호밀빵",
+      "호밀",
+      "유럽빵",
+      "냉동",
+      "토스터"
+    ]
+  },
+  {
+    "id": "BR031",
+    "name": "통밀빵",
+    "aliases": [
+      "홀그레인",
+      "통밀 빵",
+      "전립분빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "통밀을 갈아 넣어 구수하고 거친 결이 살아 있는 빵",
+    "texture": "거칠고 담백함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "전분 노화가 빨라져 푸석해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 나눠 밀봉하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 토스터에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "식감이 눅눅해집니다. 급할 때만 쓰세요."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "TOASTER": {
+        "FRESH": {
+          "level": "보통",
+          "minSec": 90,
+          "maxSec": 120
+        },
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름 없이 약불에서 앞뒤로 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "두유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "구수한 곡물 향이 콩·커피와 결이 같아 자연스럽게 이어집니다.",
+    "tip": "수분이 적어 잼이나 아보카도처럼 촉촉한 재료와 잘 맞습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "통밀빵",
+      "통밀",
+      "곡물",
+      "건강빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR032",
+    "name": "올리브빵",
+    "aliases": [
+      "올리브 빵",
+      "올리브 치아바타"
+    ],
+    "category": "식사빵",
+    "emoji": "🫒",
+    "description": "짭조름한 올리브를 통째로 넣어 구운 담백한 빵",
+    "texture": "쫄깃하고 촉촉함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "올리브의 수분과 기름 때문에 오래 두면 눅눅해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "여름철에는 냉장이 안전합니다. 데워서 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "기름이 몰린 부분이 먼저 뜨거워집니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "올리브유를 살짝 둘러 단면을 지지면 향이 살아납니다."
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "짭짤하고 기름진 맛을 탄산이 깔끔하게 정리해 줍니다.",
+    "tip": "올리브유와 발사믹에 찍어 먹으면 그대로 한 끼가 됩니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "올리브빵",
+      "올리브",
+      "유럽빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR033",
+    "name": "무화과빵",
+    "aliases": [
+      "무화과 빵",
+      "피그 브레드"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "말린 무화과를 넣어 은은하게 달고 씨가 톡톡 씹히는 빵",
+    "texture": "쫀득하고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "말린 과일이 수분을 잡아 줘 비교적 오래 촉촉합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "빵 부분이 먼저 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 밀봉하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 20분 두거나 해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "과일이 든 부분이 매우 뜨거워집니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "과일이 겉으로 나온 부분은 쉽게 탑니다."
+        }
+      }
+    },
+    "drinks": [
+      "홍차",
+      "크림치즈를 곁들인 커피"
+    ],
+    "drinkReason": "무화과의 단맛이 홍차의 떫은맛과 만나 정리됩니다.",
+    "tip": "크림치즈를 발라 먹으면 단맛과 짠맛이 맞물려 훨씬 풍부해집니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "무화과빵",
+      "무화과",
+      "건과일",
+      "유럽빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR034",
+    "name": "크랜베리빵",
+    "aliases": [
+      "크랜베리 빵",
+      "크렌베리빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "새콤한 말린 크랜베리가 촘촘히 박힌 담백한 빵",
+    "texture": "쫀득하고 담백함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "빵이 퍽퍽해지고 과일만 남습니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 밀봉하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "겉으로 나온 과일은 쉽게 탑니다."
+        }
+      }
+    },
+    "drinks": [
+      "홍차",
+      "요거트"
+    ],
+    "drinkReason": "새콤한 과일 맛이 유제품과 만나 부드럽게 정리됩니다.",
+    "tip": "견과가 함께 든 제품은 구울 때 향이 훨씬 살아납니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "크랜베리빵",
+      "크랜베리",
+      "건과일",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR035",
+    "name": "호두빵",
+    "aliases": [
+      "호두 빵",
+      "월넛 브레드"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "호두를 듬뿍 넣어 고소함이 진한 담백한 빵",
+    "texture": "쫀득하고 고소함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "견과의 기름이 굳어 식감이 둔해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 밀봉하세요. 견과 산패도 늦춰집니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우면 견과 향이 다시 올라옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "견과가 눅눅해집니다. 급할 때만 쓰세요."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "아메리카노"
+    ],
+    "drinkReason": "견과의 기름진 고소함을 담백한 음료가 눌러 줍니다.",
+    "tip": "견과가 든 빵은 오래 두면 기름이 산패해 쓴맛이 납니다. 냉동이 안전합니다.",
+    "caution": "호두가 들어 있습니다. 견과류 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "호두빵",
+      "호두",
+      "견과",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR036",
+    "name": "깨빵",
+    "aliases": [
+      "참깨빵",
+      "깨 빵",
+      "세서미"
+    ],
+    "category": "식사빵",
+    "emoji": "🍞",
+    "description": "겉에 참깨를 촘촘히 붙여 고소하게 구운 담백한 빵",
+    "texture": "겉은 바삭, 속은 부드러움",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉하면 겉껍질의 깨가 눅눅해집니다. 종이봉투가 낫습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "깨 향이 빠지고 빵은 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 구우면 깨가 다시 고소해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "깨가 쉽게 타니 짧게 보세요."
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "겉껍질이 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "기름 없이 약불에서 굴려 가며 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "보리차"
+    ],
+    "drinkReason": "깨의 고소함이 곡물 음료와 겹쳐 편안하게 이어집니다.",
+    "tip": "데울 때 깨가 먼저 타므로 온도를 낮추고 시간을 조금 늘리세요.",
+    "caution": "참깨가 들어 있습니다. 깨 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "깨빵",
+      "참깨",
+      "고소함",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR037",
+    "name": "포카치아",
+    "aliases": [
+      "포카챠",
+      "focaccia"
+    ],
+    "category": "식사빵",
+    "emoji": "🫓",
+    "description": "올리브유와 허브를 얹어 손자국을 내어 구운 납작한 이탈리아 빵",
+    "texture": "겉은 바삭, 속은 촉촉하고 폭신함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "기름이 많아 밀봉하면 눅눅해집니다. 종이봉투가 낫습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "기름이 굳어 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "먹을 만큼 잘라 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "기름과 수분이 함께 몰려 눅눅하고 질겨집니다. 오븐이나 에어프라이어를 쓰세요."
+        }
+      },
+      "OVEN": {
+        "FRESH": {
+          "tempC": 190,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "예열 후 짧게 구우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 190,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름 없이 약불에서 눌러 가며 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "올리브유의 기름진 맛을 탄산과 산미가 정리해 줍니다.",
+    "tip": "반으로 갈라 채소와 햄을 끼우면 그대로 파니니가 됩니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "포카치아",
+      "올리브유",
+      "허브",
+      "이탈리아",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR038",
+    "name": "뺑오쇼콜라",
+    "aliases": [
+      "빵오쇼콜라",
+      "초코 크루아상",
+      "pain au chocolat"
+    ],
+    "category": "페이스트리",
+    "emoji": "🥐",
+    "description": "겹겹의 버터 페이스트리 안에 초콜릿 바를 넣어 구운 빵",
+    "texture": "겉은 바삭, 속은 결이 살아 있음",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "결이 생명입니다. 당일 드시는 편이 가장 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "버터가 굳고 결이 눌려 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우세요. 결이 가장 잘 살아납니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "겉면만 살짝 살리면 됩니다."
+        },
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 360,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "notRecommended": true,
+          "reason": "결이 무너지고 초콜릿만 뜨거워집니다. 에어프라이어나 오븐을 쓰세요."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "카페라떼"
+    ],
+    "drinkReason": "버터와 초콜릿의 진한 맛을 쓴 커피가 끊어 줍니다.",
+    "tip": "데운 뒤 2분 두면 초콜릿이 살짝 굳어 흐르지 않고 먹기 편합니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "뺑오쇼콜라",
+      "초코",
+      "페이스트리",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR039",
+    "name": "크로크무슈",
+    "aliases": [
+      "크록무슈",
+      "croque monsieur"
+    ],
+    "category": "식사빵",
+    "emoji": "🥪",
+    "description": "식빵에 햄과 치즈를 넣고 소스를 얹어 구운 프랑스식 샌드위치",
+    "texture": "겉은 바삭, 속은 촉촉하고 진함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "햄과 유제품이 들어 있어 실온에 두지 마세요.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "완전히 식힌 뒤 밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "한 조각씩 랩으로 감싼 뒤 지퍼백에 넣으세요. 소스가 분리될 수 있습니다.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장실에서 하룻밤 해동한 뒤 오븐에 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "치즈가 다시 녹을 때까지 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "속까지 데워지지만 겉은 눅눅해집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 300,
+          "maxSec": 420,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 540,
+          "maxSec": 720
+        }
+      },
+      "PAN": {
+        "FRIDGE": {
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "약불에서 뚜껑을 덮어야 속까지 데워집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "토마토 수프"
+    ],
+    "drinkReason": "진하고 짭짤한 맛을 산미 있는 음료가 정리해 줍니다.",
+    "tip": "속까지 뜨거운지 반드시 확인하세요. 겉만 데워지면 가운데가 차갑습니다.",
+    "caution": "햄과 유제품이 들어 있어 실온 보관은 피하고, 데울 때는 속까지 충분히 익히세요.",
+    "soloFriendly": true,
+    "tags": [
+      "크로크무슈",
+      "햄",
+      "치즈",
+      "샌드위치",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR040",
+    "name": "에그타르트",
+    "aliases": [
+      "에그 타르트",
+      "단타",
+      "egg tart"
+    ],
+    "category": "케이크류",
+    "emoji": "🥧",
+    "description": "바삭한 페이스트리 안에 부드러운 커스터드를 채워 구운 타르트",
+    "texture": "겉은 바삭, 속은 부드러운 크림",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "달걀 커스터드라 실온에 오래 두면 상하기 쉽습니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요. 껍질은 눅눅해집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "냉동하면 커스터드에 물이 생겨 식감이 떨어집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장에서 해동한 뒤 에어프라이어로 껍질만 되살리세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "껍질만 살리는 정도로 짧게 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "커스터드가 부풀었다 꺼지면서 물이 생기고 껍질도 눅눅해집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "진한 단맛과 유지방을 쓴맛이 정리해 줍니다.",
+    "tip": "데운 직후 커스터드는 매우 뜨겁습니다. 3분 정도 두고 드세요.",
+    "caution": "달걀과 유제품이 들어 있습니다. 실온에 오래 두지 마세요.",
+    "soloFriendly": true,
+    "tags": [
+      "에그타르트",
+      "커스터드",
+      "타르트",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR041",
+    "name": "애플파이",
+    "aliases": [
+      "애플 파이",
+      "apple pie"
+    ],
+    "category": "케이크류",
+    "emoji": "🥧",
+    "description": "계핏가루를 넣은 조린 사과를 페이스트리로 감싸 구운 파이",
+    "texture": "겉은 바삭, 속은 촉촉한 과육",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "과육 수분이 껍질로 스며 하루면 눅눅해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요. 데우면 껍질이 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 조각씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어나 오븐에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 360,
+          "maxSec": 480
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 35,
+          "note": "속은 데워지지만 껍질은 눅눅해집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 480,
+          "maxSec": 600
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "바닐라 아이스크림"
+    ],
+    "drinkReason": "계피와 사과의 단맛을 쓴 커피가 정리하고, 차가운 크림은 대비를 만듭니다.",
+    "tip": "속 과육이 매우 뜨거우니 데운 뒤 3분은 두고 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "애플파이",
+      "사과",
+      "계피",
+      "파이",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR042",
+    "name": "팔미에",
+    "aliases": [
+      "팔미에르",
+      "하트파이",
+      "palmier"
+    ],
+    "category": "페이스트리",
+    "emoji": "🥐",
+    "description": "설탕을 묻힌 페이스트리를 말아 하트 모양으로 구운 과자빵",
+    "texture": "얇고 아주 바삭함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 5,
+        "note": "밀폐 용기에 넣어 두면 바삭함이 가장 오래갑니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "습기를 먹어 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "냉동해도 되지만 실온 밀폐가 더 낫습니다.",
+        "recommended": false
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "실온에서 10분 두었다가 에어프라이어로 짧게 되살리세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "설탕이 많아 쉽게 탑니다. 낮은 온도로 짧게 보세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "설탕이 녹아 눅눅해지고 바삭함이 완전히 사라집니다."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "예열 후 짧게 구우세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 홍차",
+      "아메리카노"
+    ],
+    "drinkReason": "설탕 코팅이 강해 아무것도 넣지 않은 차나 커피가 어울립니다.",
+    "tip": "눅눅해졌다면 150℃에서 1~2분만 구우면 바삭함이 돌아옵니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "팔미에",
+      "페이스트리",
+      "설탕",
+      "바삭"
+    ]
+  },
+  {
+    "id": "BR043",
+    "name": "시나몬롤",
+    "aliases": [
+      "시나몬 롤",
+      "계피빵",
+      "cinnamon roll"
+    ],
+    "category": "간식빵",
+    "emoji": "🌀",
+    "description": "계피 설탕을 말아 넣고 아이싱을 뿌린 달콤한 소용돌이 빵",
+    "texture": "촉촉하고 쫀득함",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 두세요. 아이싱이 녹아 흐를 수 있어 낱개로 두는 편이 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 4,
+        "note": "아이싱이 굳어 모양이 유지됩니다. 데워서 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분 두었다가 살짝 데우면 계피 향이 다시 올라옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRESH": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "아이싱이 녹으니 낮은 온도로 짧게 데우세요."
+        },
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "가장 촉촉하게 데워지는 방법입니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "단맛이 강해 쓴 커피나 담백한 우유로 눌러 주면 균형이 맞습니다.",
+    "tip": "이 빵은 드물게 전자레인지가 정답입니다. 아이싱과 속이 함께 부드러워집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "시나몬롤",
+      "계피",
+      "아이싱",
+      "간식빵",
+      "전자레인지"
+    ]
+  },
+  {
+    "id": "BR044",
+    "name": "스콘",
+    "aliases": [
+      "스콘빵",
+      "scone"
+    ],
+    "category": "케이크류",
+    "emoji": "🧁",
+    "description": "버터를 층층이 넣어 부슬부슬하게 구운 영국식 구움과자",
+    "texture": "부슬부슬하고 뻑뻑함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀폐 용기에 넣어 두세요. 마르면 더 뻑뻑해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "수분이 빠져 먹기 힘들어집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우면 갓 구운 것과 거의 같아집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "부슬부슬함이 사라지고 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "해동 목적으로만 쓰세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 홍차",
+      "우유"
+    ],
+    "drinkReason": "수분이 적어 뻑뻑하므로 마실 것이 반드시 함께 있어야 합니다.",
+    "tip": "잼과 크림을 올려 먹으면 부족한 수분이 채워져 훨씬 부드럽습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "스콘",
+      "버터",
+      "구움과자",
+      "홍차",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR045",
+    "name": "프레첼",
+    "aliases": [
+      "브레첼",
+      "pretzel"
+    ],
+    "category": "식사빵",
+    "emoji": "🥨",
+    "description": "반죽을 매듭지어 굽고 굵은 소금을 뿌린 짭짤한 독일식 빵",
+    "texture": "겉은 쫄깃, 속은 쫀득함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "소금이 습기를 끌어와 하루가 지나면 겉이 축축해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "눅눅해지기만 합니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "쫄깃함이 사라지고 고무처럼 질겨집니다."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "짭짤한 맛이 강해 탄산이나 산미로 씻어 주는 편이 좋습니다.",
+    "tip": "겉의 굵은 소금은 덜어 내고 먹으면 짠맛이 훨씬 부드러워집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "프레첼",
+      "소금",
+      "독일",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR046",
+    "name": "앙버터빵",
+    "aliases": [
+      "앙버터",
+      "앙꼬버터"
+    ],
+    "category": "간식빵",
+    "emoji": "🧈",
+    "description": "빵을 갈라 팥앙금과 두꺼운 버터를 끼운 달고 짭짤한 빵",
+    "texture": "부드러운 빵에 차가운 버터",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "버터가 녹아 흘러내립니다. 실온 보관은 맞지 않습니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "버터가 단단하게 유지돼 이 빵은 냉장이 기본입니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "버터와 앙금이 분리될 수 있어 권장하지 않습니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장에서 꺼내 5분 두면 버터가 살짝 부드러워져 먹기 좋습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "버터가 완전히 녹아 흘러내립니다. 차갑게 드시는 빵입니다."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "버터가 녹아 빵에 스며들고 앙금만 뜨거워집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "녹차"
+    ],
+    "drinkReason": "버터의 기름진 맛과 앙금의 단맛을 쓴맛이 함께 정리해 줍니다.",
+    "tip": "데우지 마세요. 차가운 버터의 단단함이 이 빵의 핵심입니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "앙버터",
+      "팥",
+      "버터",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR047",
+    "name": "밤앙금빵",
+    "aliases": [
+      "밤빵",
+      "밤앙금 빵",
+      "마롱빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🌰",
+    "description": "으깬 밤 앙금을 가득 채운 부드럽고 포근한 단맛의 빵",
+    "texture": "부드럽고 포슬포슬한 속",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "앙금이 단단해지지만 상하는 것은 늦춰집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 30분 두거나 전자레인지로 짧게 해동하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "앙금이 먼저 뜨거워집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "보리차"
+    ],
+    "drinkReason": "밤 앙금이 뻑뻑해 마실 것이 함께 있어야 편합니다.",
+    "tip": "앙금이 든 빵은 겉보다 속이 훨씬 뜨겁습니다. 한 김 식혀 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "밤앙금빵",
+      "밤",
+      "앙금",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR048",
+    "name": "고구마빵",
+    "aliases": [
+      "고구마 빵",
+      "스위트포테이토빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍠",
+    "description": "으깬 고구마 앙금을 채워 촉촉하고 은은하게 단 빵",
+    "texture": "촉촉하고 부드러움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "고구마 수분이 많아 여름에는 하루 안에 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "앙금이 단단해지지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "전자레인지로 짧게 해동한 뒤 에어프라이어로 마무리하면 좋습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아메리카노"
+    ],
+    "drinkReason": "고구마의 목메는 단맛을 우유가 부드럽게 풀어 줍니다.",
+    "tip": "전자레인지로 데우면 갓 찐 고구마처럼 촉촉해집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "고구마빵",
+      "고구마",
+      "앙금",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR049",
+    "name": "단호박빵",
+    "aliases": [
+      "단호박 빵",
+      "호박빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🎃",
+    "description": "단호박 앙금을 넣고 씨앗을 올려 구운 노란빛 간식빵",
+    "texture": "촉촉하고 포슬포슬함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "수분이 많아 밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "여름철에는 냉장이 안전합니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "전자레인지로 짧게 해동하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "위에 올린 씨앗이 쉽게 탑니다."
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "호박차"
+    ],
+    "drinkReason": "은은한 단맛이라 진한 음료보다 부드러운 쪽이 어울립니다.",
+    "tip": "앙금이 뜨거우니 반으로 갈라 김을 빼고 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "단호박빵",
+      "단호박",
+      "앙금",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR050",
+    "name": "단팥소보로",
+    "aliases": [
+      "팥소보로",
+      "소보로단팥빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍪",
+    "description": "소보로 껍질을 씌우고 팥앙금을 채운 두 가지가 겹친 빵",
+    "texture": "겉은 바슬바슬, 속은 촉촉함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉하면 소보로가 눅눅해집니다. 종이봉투가 낫습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "소보로는 눅눅해지지만 앙금은 오래갑니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 에어프라이어에 구우면 소보로가 다시 바슬바슬해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "소보로만 살리면 됩니다."
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "속은 부드러워지지만 소보로는 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "팥과 소보로 둘 다 달아 담백한 음료가 필요합니다.",
+    "tip": "소보로가 떨어지기 쉬우니 접시나 봉투를 받치고 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "단팥소보로",
+      "소보로",
+      "팥",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR051",
+    "name": "크림치즈빵",
+    "aliases": [
+      "크림치즈 빵",
+      "크치빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🧀",
+    "description": "새콤한 크림치즈를 듬뿍 채운 부드럽고 촉촉한 빵",
+    "texture": "부드럽고 크리미함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "크림치즈가 들어 있어 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요. 이 빵은 냉장이 기본입니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "해동 시 크림치즈에서 물이 생겨 식감이 떨어집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장에서 꺼내 10분 두면 크림이 부드러워집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림치즈가 녹아 흘러나옵니다. 차갑게 드시는 편이 좋습니다."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "아주 짧게만 데우세요. 더 돌리면 크림이 분리됩니다."
+        }
+      }
+    },
+    "drinks": [
+      "아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "유지방이 진해 쓴맛이나 떫은맛으로 끊어 주면 좋습니다.",
+    "tip": "차갑게 먹는 빵입니다. 데우면 크림이 흘러 모양이 무너집니다.",
+    "caution": "유제품이 들어 있어 실온 보관은 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "크림치즈빵",
+      "크림치즈",
+      "냉장",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR052",
+    "name": "유자빵",
+    "aliases": [
+      "유자 빵",
+      "유자청빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍋",
+    "description": "유자청을 넣어 상큼한 향과 쌉쌀한 껍질 맛이 도는 빵",
+    "texture": "촉촉하고 부드러움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "유자청의 당분이 수분을 잡아 줘 비교적 촉촉합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 4,
+        "note": "냉장하면 유자 향이 더 또렷해집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분 두면 향이 살아납니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18,
+          "note": "유자청이 든 부분이 매우 뜨거워집니다."
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "녹차",
+      "탄산수"
+    ],
+    "drinkReason": "상큼한 향이라 진한 음료보다 맑은 쪽이 잘 맞습니다.",
+    "tip": "차갑게 먹어도 맛있는 드문 빵입니다. 여름에는 냉장이 낫습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "유자빵",
+      "유자",
+      "상큼",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR053",
+    "name": "건포도빵",
+    "aliases": [
+      "건포도 빵",
+      "레이즌브레드"
+    ],
+    "category": "간식빵",
+    "emoji": "🍇",
+    "description": "건포도를 촘촘히 넣어 씹을수록 단맛이 도는 빵",
+    "texture": "쫀득하고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "건포도가 수분을 잡아 줘 비교적 오래 촉촉합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "빵이 퍽퍽해지고 건포도만 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "잘라서 한 조각씩 밀봉하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "겉으로 나온 건포도가 쉽게 탑니다."
+        },
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "level": "바삭",
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름 없이 약불에서 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 우유",
+      "홍차"
+    ],
+    "drinkReason": "건포도의 진한 단맛을 담백한 음료가 눌러 줍니다.",
+    "tip": "버터를 발라 구우면 건포도의 단맛이 훨씬 또렷해집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "건포도빵",
+      "건포도",
+      "건과일",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR054",
+    "name": "소시지빵",
+    "aliases": [
+      "소세지빵",
+      "핫도그빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🌭",
+    "description": "소시지를 얹고 케첩과 머스터드를 뿌려 구운 든든한 조리빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "가공육과 소스가 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "완전히 식힌 뒤 밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "소스는 분리되지만 소시지와 빵은 괜찮습니다.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 하룻밤 해동한 뒤 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "속 소시지까지 뜨거워지도록 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 390,
+          "maxSec": 510
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "속까지 데워지지만 빵은 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 90,
+          "maxSec": 120
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 270,
+          "maxSec": 360,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 480,
+          "maxSec": 600
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "짭짤하고 기름진 맛을 탄산이 씻어 줍니다.",
+    "tip": "소스가 흐르기 쉬우니 종이호일을 깔고 데우세요.",
+    "caution": "가공육이 들어 있습니다. 실온 보관은 피하고 데울 때 속까지 충분히 익히세요.",
+    "soloFriendly": true,
+    "tags": [
+      "소시지빵",
+      "소시지",
+      "조리빵",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR055",
+    "name": "야채빵",
+    "aliases": [
+      "야채 빵",
+      "베지빵",
+      "샐러드빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🥗",
+    "description": "잘게 썬 채소와 마요네즈를 얹어 구운 짭조름한 조리빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "마요네즈와 채소가 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "완전히 식힌 뒤 밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "채소에서 물이 나오고 마요네즈가 분리됩니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않는 빵입니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "마요네즈가 튈 수 있으니 종이호일을 깔아 주세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "가장 무난한 방법입니다. 빵은 조금 눅눅해집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "마요네즈의 기름진 맛을 산미와 탄산이 정리해 줍니다.",
+    "tip": "마요네즈가 많은 빵은 낮은 온도로 데워야 분리되지 않습니다.",
+    "caution": "마요네즈와 채소가 올라가 상하기 쉽습니다. 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "야채빵",
+      "채소",
+      "마요네즈",
+      "조리빵",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR056",
+    "name": "카레빵",
+    "aliases": [
+      "카레 빵",
+      "커리빵"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍛",
+    "description": "카레 소를 넣고 빵가루를 입혀 튀긴 바삭한 일본식 빵",
+    "texture": "겉은 바삭, 속은 촉촉한 카레",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "튀김이라 시간이 지나면 기름이 배어 눅눅해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "식으면 딱딱해지지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 튀김옷이 살아납니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "기름이 빠지면서 다시 바삭해집니다."
+        },
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "속은 데워지지만 튀김옷이 완전히 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 70,
+          "maxSec": 100,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 240,
+          "maxSec": 300
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "튀김의 기름진 맛을 탄산이 깔끔하게 끊어 줍니다.",
+    "tip": "속 카레가 매우 뜨겁습니다. 데운 뒤 3분은 두고 드세요.",
+    "caution": "속 카레가 튀어나올 만큼 뜨거울 수 있습니다. 아이가 먹을 때는 잘라서 식혀 주세요.",
+    "soloFriendly": true,
+    "tags": [
+      "카레빵",
+      "카레",
+      "튀김",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR057",
+    "name": "햄버거번",
+    "aliases": [
+      "버거번",
+      "햄버거 빵",
+      "bun"
+    ],
+    "category": "식사빵",
+    "emoji": "🍔",
+    "description": "참깨를 올려 구운 햄버거용 둥근 빵",
+    "texture": "부드럽고 폭신함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "금세 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "반으로 갈라 밀봉하면 바로 쓰기 좋습니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 단면을 팬에 지지면 바로 쓸 수 있습니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "눅눅해지니 짧게만 데우세요."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "버터를 조금 두르고 단면을 지지면 가장 맛있습니다."
+        },
+        "FROZEN": {
+          "minSec": 120,
+          "maxSec": 180
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "보통",
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "단면이 위로 오게 두세요."
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "버거로 먹는 경우가 많아 기름진 맛을 씻어 줄 음료가 맞습니다.",
+    "tip": "단면을 지져 얇은 막을 만들면 소스가 스며들지 않아 눅눅해지지 않습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "햄버거번",
+      "번",
+      "버거",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR058",
+    "name": "핫도그번",
+    "aliases": [
+      "핫도그 빵",
+      "핫도그롤"
+    ],
+    "category": "식사빵",
+    "emoji": "🌭",
+    "description": "소시지를 끼우기 좋게 길쭉하게 구운 부드러운 빵",
+    "texture": "부드럽고 폭신함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "금세 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 팬이나 에어프라이어로 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 8,
+          "maxSec": 12
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "갈라서 단면을 약불에 지지세요."
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "약하게",
+          "minSec": 60,
+          "maxSec": 90
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "조리해 먹는 빵이라 느끼함을 씻어 줄 음료가 어울립니다.",
+    "tip": "갈라진 면을 살짝 구우면 소스가 스며들지 않습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "핫도그번",
+      "번",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR059",
+    "name": "치즈빵",
+    "aliases": [
+      "치즈 빵",
+      "치즈볼빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🧀",
+    "description": "치즈를 얹어 노릇하게 구운 짭조름한 빵",
+    "texture": "겉은 쫀득, 속은 부드러움",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "유제품이 올라가 실온에 오래 두지 마세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요. 데우면 치즈가 다시 늘어납니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "치즈가 다시 녹을 때까지 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 35,
+          "note": "치즈는 녹지만 겉면은 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 60,
+          "maxSec": 90
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 300
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 390,
+          "maxSec": 510
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "짭짤하고 기름진 치즈를 산미와 탄산이 정리해 줍니다.",
+    "tip": "녹은 치즈는 매우 뜨겁습니다. 데운 뒤 2분은 두고 드세요.",
+    "caution": "유제품이 들어 있어 여름철에는 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "치즈빵",
+      "치즈",
+      "간식빵",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR060",
+    "name": "명란바게트",
+    "aliases": [
+      "명란 바게트",
+      "멘타이코 바게트"
+    ],
+    "category": "식사빵",
+    "emoji": "🥖",
+    "description": "바게트를 갈라 명란 버터를 발라 구운 짭조름한 빵",
+    "texture": "겉은 바삭, 속은 촉촉함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "명란과 버터가 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "한 조각씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 바로 에어프라이어나 오븐에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "명란 버터가 끓어오를 정도로 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "바게트가 고무처럼 질겨지고 버터만 녹아 흘러내립니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 360,
+          "maxSec": 480
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "짠맛과 버터의 기름진 맛을 탄산이 끊어 줍니다.",
+    "tip": "버터가 흘러내리니 종이호일이나 접시를 받치고 데우세요.",
+    "caution": "명란과 버터가 들어 있어 실온 보관은 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "명란바게트",
+      "명란",
+      "바게트",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR061",
+    "name": "베이컨에피",
+    "aliases": [
+      "에피",
+      "베이컨 에피",
+      "epi"
+    ],
+    "category": "식사빵",
+    "emoji": "🥖",
+    "description": "베이컨을 넣고 밀이삭 모양으로 잘라 구운 바게트",
+    "texture": "겉은 바삭, 속은 쫄깃함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "베이컨이 들어 있어 당일 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 조각씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "바게트 반죽이 질겨지고 베이컨은 눅눅해집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 210,
+          "maxSec": 270,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 360,
+          "maxSec": 480
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "베이컨의 짠맛과 기름을 탄산이나 쓴맛이 정리해 줍니다.",
+    "tip": "이삭 모양대로 손으로 뜯으면 칼 없이 나눠 먹기 좋습니다.",
+    "caution": "가공육이 들어 있어 실온에 오래 두지 마세요.",
+    "soloFriendly": false,
+    "tags": [
+      "베이컨에피",
+      "베이컨",
+      "바게트",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR062",
+    "name": "초코빵",
+    "aliases": [
+      "초코 빵",
+      "초콜릿빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍫",
+    "description": "초콜릿 크림을 채우고 코코아 반죽으로 구운 진한 단맛의 빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 서늘한 곳에 두세요. 더운 곳에서는 초콜릿이 녹습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 4,
+        "note": "초콜릿이 단단해져 모양이 유지됩니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분 두면 크림이 부드러워집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "초콜릿이 흘러나올 수 있어 낮은 온도로 짧게 데우세요."
+        },
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "크림이 매우 뜨거워지니 짧게 끊어 데우세요."
+        },
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FRIDGE": {
+          "minSec": 18,
+          "maxSec": 25
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "단맛이 매우 강해 담백한 우유나 쓴 커피가 필요합니다.",
+    "tip": "살짝만 데우면 크림이 녹아 흐르니 겉이 미지근할 정도면 충분합니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "초코빵",
+      "초콜릿",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR063",
+    "name": "소라빵",
+    "aliases": [
+      "소라 빵",
+      "코르네",
+      "크림소라빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🐚",
+    "description": "반죽을 원뿔에 감아 구운 뒤 크림을 채운 소라 모양 빵",
+    "texture": "겉은 쫀득, 속은 부드러운 크림",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "커스터드 크림이 들어 있어 실온에 두면 상하기 쉽습니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "해동 시 크림에서 물이 생겨 무너집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않는 빵입니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 녹아 흘러나옵니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 끓어 분리되고 빵은 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "진한 크림을 쓴맛이나 떫은맛이 정리해 줍니다.",
+    "tip": "차갑게 먹는 빵입니다. 데우면 크림이 흘러 형태가 무너집니다.",
+    "caution": "커스터드 크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "소라빵",
+      "크림",
+      "냉장",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR064",
+    "name": "메론빵",
+    "aliases": [
+      "멜론빵",
+      "메론 빵",
+      "메론파",
+      "melon pan"
+    ],
+    "category": "간식빵",
+    "emoji": "🍈",
+    "description": "비스킷 반죽을 씌워 격자무늬로 구운 겉바속촉 일본식 빵",
+    "texture": "겉은 바삭한 쿠키, 속은 폭신함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉하면 쿠키 껍질이 눅눅해집니다. 종이봉투가 낫습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "껍질은 눅눅해지고 속은 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 껍질이 다시 바삭해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "껍질만 살리면 됩니다."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "속은 부드러워지지만 껍질의 바삭함은 사라집니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 390
+        }
+      },
+      "TOASTER": {
+        "DAY_OLD": {
+          "level": "약하게",
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "쿠키 껍질의 설탕이 쉽게 탑니다."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "쿠키 껍질의 단맛을 담백한 우유가 눌러 줍니다.",
+    "tip": "구운 뒤 2분 식히면 껍질이 굳어 바삭함이 오래갑니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "메론빵",
+      "멜론빵",
+      "쿠키",
+      "간식빵",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR065",
+    "name": "슈크림빵",
+    "aliases": [
+      "슈크림 빵",
+      "커스터드빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍮",
+    "description": "부드러운 커스터드 크림을 가득 채운 폭신한 빵",
+    "texture": "폭신하고 크리미함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "커스터드 크림은 실온에서 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "해동하면 크림에서 물이 생겨 식감이 무너집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않는 빵입니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 끓어 흘러나옵니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 분리되고 빵은 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "달고 진한 크림을 쓴맛이 정리해 줍니다.",
+    "tip": "차갑게 먹는 빵입니다. 냉장에서 꺼내 5분 두면 크림이 가장 부드럽습니다.",
+    "caution": "커스터드 크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "슈크림빵",
+      "커스터드",
+      "크림",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR066",
+    "name": "감자빵",
+    "aliases": [
+      "감자 빵",
+      "강원도감자빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🥔",
+    "description": "감자 모양으로 빚어 감자 앙금을 채운 촉촉한 빵",
+    "texture": "쫀득하고 촉촉함",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "수분이 많아 여름에는 당일 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "앙금이 단단해지지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 4,
+      "thawNote": "전자레인지로 짧게 데우면 갓 찐 것처럼 촉촉해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "가장 잘 어울리는 방법입니다."
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 50,
+          "maxSec": 80
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 270
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "보리차"
+    ],
+    "drinkReason": "담백하고 목이 메기 쉬워 마실 것이 함께 있어야 편합니다.",
+    "tip": "이 빵은 전자레인지가 정답입니다. 촉촉함이 가장 잘 살아납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "감자빵",
+      "감자",
+      "앙금",
+      "전자레인지"
+    ]
+  },
+  {
+    "id": "BR067",
+    "name": "옥수수빵",
+    "aliases": [
+      "옥수수 빵",
+      "콘마요빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🌽",
+    "description": "옥수수 알갱이와 마요네즈를 얹어 구운 달고 짭짤한 빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "마요네즈가 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "마요네즈가 분리되고 옥수수에서 물이 나옵니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않는 빵입니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210,
+          "note": "마요네즈가 튈 수 있으니 종이호일을 깔아 주세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 40,
+          "note": "가장 무난한 방법입니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 210,
+          "maxSec": 270
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "마요네즈의 기름진 맛을 산미와 탄산이 정리해 줍니다.",
+    "tip": "마요네즈가 많으면 낮은 온도로 데워야 분리되지 않습니다.",
+    "caution": "마요네즈가 올라가 상하기 쉽습니다. 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "옥수수빵",
+      "옥수수",
+      "마요네즈",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR068",
+    "name": "갈릭바게트",
+    "aliases": [
+      "갈릭 바게트",
+      "마늘 바게트",
+      "갈릭브레드"
+    ],
+    "category": "식사빵",
+    "emoji": "🧄",
+    "description": "바게트를 썰어 마늘 버터를 발라 구운 향이 강한 빵",
+    "texture": "겉은 바삭, 속은 촉촉함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "버터가 들어 있어 당일 드시는 편이 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요. 데우면 바삭함이 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 조각씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 240,
+          "maxSec": 330,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "바게트가 고무처럼 질겨지고 버터만 녹아 흘러내립니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "마늘과 버터의 강한 향을 탄산이 씻어 줍니다.",
+    "tip": "마늘 향이 강하니 밀폐 용기에 따로 담아 두세요. 다른 빵에 향이 뱁니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "갈릭바게트",
+      "마늘",
+      "바게트",
+      "냉동",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR069",
+    "name": "피자바게트",
+    "aliases": [
+      "피자 바게트",
+      "바게트피자"
+    ],
+    "category": "식사빵",
+    "emoji": "🍕",
+    "description": "바게트를 갈라 소스와 치즈, 토핑을 올려 구운 빵",
+    "texture": "겉은 바삭, 위는 쫀득한 치즈",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "치즈와 토핑이 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 조각씩 랩으로 감싼 뒤 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "치즈가 다시 녹을 때까지 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 30,
+          "maxSec": 45,
+          "note": "치즈는 녹지만 바게트가 질겨집니다."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 190,
+          "minSec": 240,
+          "maxSec": 300,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 190,
+          "minSec": 420,
+          "maxSec": 540
+        }
+      }
+    },
+    "drinks": [
+      "탄산음료",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "치즈와 소스의 기름진 맛을 탄산이 끊어 줍니다.",
+    "tip": "치즈가 흘러내리니 종이호일을 깔고 데우세요.",
+    "caution": "치즈와 토핑이 올라가 상하기 쉽습니다. 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "피자바게트",
+      "피자",
+      "치즈",
+      "바게트",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR070",
+    "name": "팥도넛",
+    "aliases": [
+      "팥 도넛",
+      "단팥도넛",
+      "앙도넛"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍩",
+    "description": "팥앙금을 채워 튀긴 뒤 설탕을 묻힌 둥근 도넛",
+    "texture": "겉은 쫀득, 속은 촉촉한 앙금",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "튀김이라 시간이 지나면 기름이 배어 눅눅해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "기름이 굳어 딱딱해집니다. 데워서 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "실온에서 30분 두거나 전자레인지로 짧게 해동하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "설탕이 녹아 눌어붙을 수 있어 종이호일을 깔아 주세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "속 앙금이 매우 뜨거워집니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "튀김의 기름과 팥의 단맛이 겹쳐 담백한 음료가 필요합니다.",
+    "tip": "속 앙금이 겉보다 훨씬 뜨겁습니다. 반으로 갈라 김을 빼고 드세요.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "팥도넛",
+      "팥",
+      "도넛",
+      "튀김"
+    ]
+  },
+  {
+    "id": "BR071",
+    "name": "크림도넛",
+    "aliases": [
+      "크림 도넛",
+      "커스터드도넛"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍩",
+    "description": "커스터드 크림을 채워 튀긴 뒤 슈거파우더를 뿌린 도넛",
+    "texture": "폭신하고 크리미함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "커스터드 크림이 들어 있어 실온에서 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "해동 시 크림에서 물이 생겨 무너집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 끓어 흘러나오고 슈거파우더가 녹습니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 분리되고 반죽은 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "기름과 크림이 겹쳐 담백하거나 쓴 음료가 필요합니다.",
+    "tip": "차갑게 먹는 도넛입니다. 냉장에서 꺼내 5분 두면 크림이 가장 부드럽습니다.",
+    "caution": "커스터드 크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "크림도넛",
+      "커스터드",
+      "도넛",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR072",
+    "name": "찹쌀도넛",
+    "aliases": [
+      "찹쌀 도넛",
+      "찹쌀볼"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍡",
+    "description": "찹쌀 반죽을 공 모양으로 튀겨 쫀득함이 강한 도넛",
+    "texture": "아주 쫀득하고 쫄깃함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "식으면 급격히 딱딱해집니다. 당일 드시는 편이 가장 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "찹쌀이 단단하게 굳어 씹기 힘들어집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 개씩 밀봉해 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "전자레인지로 짧게 데우면 쫀득함이 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "겉은 살아나지만 속은 여전히 단단할 수 있습니다."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "쫀득함을 되살리는 데는 이 방법이 가장 낫습니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 50
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "보리차"
+    ],
+    "drinkReason": "쫀득해 목이 메기 쉬워 마실 것이 반드시 함께 있어야 합니다.",
+    "tip": "찹쌀은 굳으면 잘 안 돌아옵니다. 사 온 날 드시는 편이 낫습니다.",
+    "caution": "쫀득해 목에 걸리기 쉽습니다. 아이나 어르신은 작게 잘라 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "찹쌀도넛",
+      "찹쌀",
+      "도넛",
+      "튀김"
+    ]
+  },
+  {
+    "id": "BR073",
+    "name": "초코링도넛",
+    "aliases": [
+      "초코 도넛",
+      "초콜릿도넛",
+      "글레이즈드도넛"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍩",
+    "description": "링 모양으로 튀겨 초콜릿을 입히고 스프링클을 뿌린 도넛",
+    "texture": "폭신하고 부드러움",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀폐 용기에 넣어 두세요. 더운 곳에서는 코팅이 녹습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "초콜릿 코팅이 단단해집니다. 식감은 조금 떨어집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "코팅이 갈라질 수 있어 권장하지 않습니다.",
+        "recommended": false
+      },
+      "best": "ROOM",
+      "freezeScore": 2,
+      "thawNote": "실온에서 30분 두세요. 데우면 코팅이 흘러내립니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "초콜릿 코팅이 녹아 흘러내리고 스프링클이 번집니다."
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 6,
+          "maxSec": 10,
+          "note": "아주 짧게만 데우세요. 더 돌리면 코팅이 흐릅니다."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "단맛이 매우 강해 담백하거나 쓴 음료로 눌러야 합니다.",
+    "tip": "데우지 않고 그대로 먹는 편이 모양과 식감 모두 낫습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "초코링도넛",
+      "초콜릿",
+      "도넛",
+      "튀김"
+    ]
+  },
+  {
+    "id": "BR074",
+    "name": "도넛볼",
+    "aliases": [
+      "도넛 볼",
+      "먼치킨",
+      "도넛홀"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🍩",
+    "description": "한입 크기로 튀겨 설탕을 묻힌 작고 동그란 도넛",
+    "texture": "겉은 바삭, 속은 폭신함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "작아서 빨리 마릅니다. 밀폐 용기에 넣어 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "기름이 굳어 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "지퍼백에 넣어 냉동하세요. 필요한 만큼만 꺼낼 수 있습니다.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 에어프라이어에 짧게 구우면 바삭함이 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "작아서 금방 데워집니다. 짧게 보세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 8,
+          "maxSec": 12
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "아이스 아메리카노"
+    ],
+    "drinkReason": "작아서 계속 집어 먹게 되므로 물리지 않을 담백한 음료가 좋습니다.",
+    "tip": "한 번에 다 데우지 말고 먹을 만큼만 꺼내세요. 식으면 금방 딱딱해집니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "도넛볼",
+      "도넛",
+      "한입",
+      "튀김"
+    ]
+  },
+  {
+    "id": "BR075",
+    "name": "츄러스",
+    "aliases": [
+      "추로스",
+      "churros"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🥖",
+    "description": "별 모양 깍지로 짜서 튀긴 뒤 계피 설탕을 묻힌 막대 과자빵",
+    "texture": "겉은 아주 바삭, 속은 촉촉함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "바삭함이 생명이라 당일, 가능하면 바로 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "습기를 먹어 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 21,
+        "note": "지퍼백에 넣어 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 바삭함이 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "설탕이 눌어붙지 않게 종이호일을 깔아 주세요."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "설탕이 녹고 눅눅해져 바삭함이 완전히 사라집니다."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 300,
+          "maxSec": 420
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 초콜릿",
+      "아메리카노"
+    ],
+    "drinkReason": "원래 초콜릿에 찍어 먹는 빵이라 진한 음료와 잘 맞습니다.",
+    "tip": "눅눅해졌다면 에어프라이어 170℃에서 1분 30초면 대부분 살아납니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "츄러스",
+      "추로스",
+      "계피",
+      "튀김",
+      "에어프라이어"
+    ]
+  },
+  {
+    "id": "BR076",
+    "name": "호떡",
+    "aliases": [
+      "호떡빵",
+      "씨앗호떡"
+    ],
+    "category": "도넛·튀김",
+    "emoji": "🥞",
+    "description": "반죽에 흑설탕을 넣어 눌러 지진 한국식 길거리 간식",
+    "texture": "겉은 바삭, 속은 쫀득하고 뜨거운 설탕",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "식으면 딱딱해집니다. 갓 만든 것을 바로 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "반죽이 굳지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 장씩 종이호일로 나눠 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 팬이나 에어프라이어로 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 40,
+          "note": "쫀득함은 살지만 겉이 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 60,
+          "maxSec": 90
+        }
+      },
+      "PAN": {
+        "FRIDGE": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "기름을 살짝 두르고 약불에서 눌러 가며 지지세요."
+        },
+        "FROZEN": {
+          "minSec": 240,
+          "maxSec": 330
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "아메리카노"
+    ],
+    "drinkReason": "흑설탕의 단맛이 매우 강해 담백한 음료로 눌러야 합니다.",
+    "tip": "속 설탕물이 흘러나오니 종이컵이나 접시를 받치고 드세요.",
+    "caution": "속 흑설탕이 매우 뜨겁습니다. 한 김 식힌 뒤 드시고 아이는 잘라서 주세요.",
+    "soloFriendly": true,
+    "tags": [
+      "호떡",
+      "흑설탕",
+      "길거리",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR077",
+    "name": "롤케이크",
+    "aliases": [
+      "롤 케이크",
+      "롤케익",
+      "스위스롤"
+    ],
+    "category": "케이크류",
+    "emoji": "🍰",
+    "description": "폭신한 시트에 크림을 발라 말아 낸 케이크",
+    "texture": "폭신하고 부드러움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "생크림이 들어 있어 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "통째로 랩에 싸 냉동하고 반해동 상태로 잘라 드세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 2~3시간 해동하세요. 실온 해동은 크림이 처집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 녹아 흘러내리고 시트가 마릅니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 분리되고 시트가 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "생크림의 유지방을 쓴맛이나 떫은맛이 정리해 줍니다.",
+    "tip": "자를 때 칼을 뜨거운 물에 데워 닦고 쓰면 단면이 깔끔합니다.",
+    "caution": "생크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": false,
+    "tags": [
+      "롤케이크",
+      "생크림",
+      "케이크",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR078",
+    "name": "마들렌",
+    "aliases": [
+      "마들렌느",
+      "madeleine"
+    ],
+    "category": "케이크류",
+    "emoji": "🐚",
+    "description": "조개 모양 틀에 구워 배꼽이 볼록 솟은 버터 구움과자",
+    "texture": "촉촉하고 부드러움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 4,
+        "note": "개별 포장된 상태로 서늘한 곳에 두면 촉촉함이 오래갑니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "버터가 굳어 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "개별 포장째 지퍼백에 넣어 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 20분 두면 원래 식감으로 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "버터가 많아 낮은 온도로 짧게 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 6,
+          "maxSec": 10,
+          "note": "아주 짧게만 데우세요. 더 돌리면 질겨집니다."
+        },
+        "FROZEN": {
+          "minSec": 20,
+          "maxSec": 35
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 홍차",
+      "카페라떼"
+    ],
+    "drinkReason": "버터 향이 진해 홍차의 떫은맛과 두면 균형이 맞습니다.",
+    "tip": "구운 다음 날이 가장 촉촉합니다. 서둘러 먹지 않아도 됩니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "마들렌",
+      "버터",
+      "구움과자",
+      "홍차"
+    ]
+  },
+  {
+    "id": "BR079",
+    "name": "파운드케이크",
+    "aliases": [
+      "파운드 케이크",
+      "파운드"
+    ],
+    "category": "케이크류",
+    "emoji": "🍰",
+    "description": "버터와 설탕을 같은 비율로 넣어 묵직하게 구운 케이크",
+    "texture": "촘촘하고 묵직함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 5,
+        "note": "랩으로 단면을 감싸 두면 촉촉함이 오래갑니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "버터가 굳어 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 30분 두면 버터가 풀려 원래 식감으로 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 120
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "짧게만 데우세요."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 45
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "버터 없이 약불에서 단면을 지지면 겉이 바삭해집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "묵직하고 달아 마실 것이 반드시 함께 있어야 편합니다.",
+    "tip": "만든 다음 날부터 3일까지가 가장 맛있습니다. 급하게 먹지 않아도 됩니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "파운드케이크",
+      "버터",
+      "구움과자",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR080",
+    "name": "시폰케이크",
+    "aliases": [
+      "시폰 케이크",
+      "쉬폰케이크"
+    ],
+    "category": "케이크류",
+    "emoji": "🍰",
+    "description": "달걀 흰자를 잔뜩 넣어 공기를 머금은 가볍고 폭신한 케이크",
+    "texture": "아주 폭신하고 가벼움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "마르면 푸석해집니다. 밀폐 용기에 넣어 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담으면 촉촉함이 유지됩니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 조각씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 2시간 해동하세요."
+    },
+    "heating": {
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "아주 짧게만 데우면 폭신함이 살아납니다."
+        },
+        "FROZEN": {
+          "minSec": 25,
+          "maxSec": 40
+        }
+      },
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "겉만 마르고 속은 그대로입니다. 폭신함이 사라집니다."
+        }
+      }
+    },
+    "drinks": [
+      "홍차",
+      "흰 우유"
+    ],
+    "drinkReason": "가볍고 담백해 진한 음료보다 맑은 쪽이 잘 맞습니다.",
+    "tip": "생크림을 곁들이면 부족한 촉촉함이 채워집니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "시폰케이크",
+      "폭신",
+      "케이크",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR081",
+    "name": "피낭시에",
+    "aliases": [
+      "휘낭시에",
+      "financier"
+    ],
+    "category": "케이크류",
+    "emoji": "🧈",
+    "description": "태운 버터와 아몬드가루로 구운 작은 직사각 구움과자",
+    "texture": "겉은 바삭, 속은 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 5,
+        "note": "개별 포장째 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "버터가 굳어 향이 죽습니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "개별 포장째 지퍼백에 넣어 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 20분 두면 버터 향이 다시 올라옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "겉면만 살짝 살리면 됩니다."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 6,
+          "maxSec": 10
+        },
+        "FROZEN": {
+          "minSec": 20,
+          "maxSec": 35
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "태운 버터의 진한 향을 쓴맛이 정리해 줍니다.",
+    "tip": "살짝 데우면 태운 버터 향이 확 살아납니다. 마들렌보다 효과가 큽니다.",
+    "caution": "아몬드가루가 들어 있습니다. 견과류 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "피낭시에",
+      "휘낭시에",
+      "버터",
+      "아몬드",
+      "구움과자"
+    ]
+  },
+  {
+    "id": "BR082",
+    "name": "다쿠아즈",
+    "aliases": [
+      "다쿠와즈",
+      "dacquoise"
+    ],
+    "category": "케이크류",
+    "emoji": "🍪",
+    "description": "아몬드 머랭 두 장 사이에 크림을 끼운 타원형 과자",
+    "texture": "겉은 바삭, 속은 폭신하고 크리미함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "크림이 들어 있어 오래 두지 마세요. 습기에도 약합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요. 이 과자는 냉장이 기본입니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 1시간 해동하세요. 실온 해동은 머랭이 눅눅해집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "머랭이 타고 크림이 녹아 흘러나옵니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "머랭이 눅눅해지고 크림이 분리됩니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "녹차"
+    ],
+    "drinkReason": "아몬드와 크림의 단맛을 쓴맛이나 떫은맛이 정리해 줍니다.",
+    "tip": "냉장에서 꺼내 10분 두면 머랭은 바삭하고 크림은 부드러운 상태가 됩니다.",
+    "caution": "아몬드가 들어 있습니다. 견과류 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "다쿠아즈",
+      "머랭",
+      "아몬드",
+      "크림",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR083",
+    "name": "브라우니",
+    "aliases": [
+      "브라우니케이크",
+      "brownie"
+    ],
+    "category": "케이크류",
+    "emoji": "🍫",
+    "description": "초콜릿을 듬뿍 넣어 눅진하게 구운 진한 사각 케이크",
+    "texture": "눅진하고 촘촘함",
+    "sweetness": 5,
+    "storage": {
+      "room": {
+        "days": 4,
+        "note": "밀폐 용기에 넣어 두세요. 시간이 지날수록 더 눅진해집니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 7,
+        "note": "차갑게 먹으면 식감이 더 단단하고 진해집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 45,
+        "note": "한 조각씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 5,
+      "thawNote": "실온에서 30분 두거나 살짝 데워 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "초콜릿이 녹아 흐를 수 있으니 짧게 보세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 8,
+          "maxSec": 12,
+          "note": "초콜릿이 녹아 갓 구운 것처럼 눅진해집니다."
+        },
+        "FRIDGE": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 50
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "단맛과 초콜릿이 매우 진해 담백한 음료가 반드시 필요합니다.",
+    "tip": "살짝 데워 아이스크림을 올리면 온도 대비가 생겨 훨씬 맛있습니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "브라우니",
+      "초콜릿",
+      "케이크",
+      "전자레인지"
+    ]
+  },
+  {
+    "id": "BR084",
+    "name": "몽블랑",
+    "aliases": [
+      "몽블랑 케이크",
+      "mont blanc"
+    ],
+    "category": "케이크류",
+    "emoji": "🌰",
+    "description": "밤 크림을 실처럼 짜 올려 산 모양으로 만든 케이크",
+    "texture": "부드럽고 포슬포슬한 밤 크림",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "생크림과 밤 크림이 올라가 실온에 두면 무너지고 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "해동하면 크림이 분리되고 모양이 무너집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 녹아 모양이 완전히 무너집니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 분리되고 형태가 사라집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "밤 크림이 뻑뻑하고 달아 쓴 음료가 함께 있어야 편합니다.",
+    "tip": "위에서 아래로 눌러 잘라야 크림과 시트가 함께 떠집니다.",
+    "caution": "생크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "몽블랑",
+      "밤",
+      "생크림",
+      "케이크",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR085",
+    "name": "에클레어",
+    "aliases": [
+      "에끌레어",
+      "eclair"
+    ],
+    "category": "케이크류",
+    "emoji": "🍫",
+    "description": "길쭉한 슈 안에 크림을 채우고 초콜릿을 입힌 프랑스 과자",
+    "texture": "겉은 부드럽고 속은 크리미함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "커스터드 크림이 들어 있어 실온에서 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "해동하면 슈가 눅눅해지고 크림에서 물이 생깁니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 냉장 보관 후 이틀 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "초콜릿 코팅이 녹고 크림이 흘러나옵니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림이 분리되고 슈가 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "초콜릿과 크림이 겹쳐 진하므로 쓴맛으로 끊어 주면 좋습니다.",
+    "tip": "차갑게 먹는 과자입니다. 냉장에서 꺼내 5분 두면 크림이 가장 부드럽습니다.",
+    "caution": "커스터드 크림이 들어 있어 반드시 냉장 보관하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "에클레어",
+      "슈",
+      "크림",
+      "초콜릿",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR086",
+    "name": "티그레",
+    "aliases": [
+      "티그레이",
+      "tigre"
+    ],
+    "category": "케이크류",
+    "emoji": "🍫",
+    "description": "가운데를 오목하게 구워 가나슈를 채운 반지 모양 구움과자",
+    "texture": "겉은 촉촉, 가운데는 진한 초콜릿",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "개별 포장째 서늘한 곳에 두세요. 더우면 가나슈가 녹습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 5,
+        "note": "가나슈가 단단해집니다. 꺼내 10분 두고 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "개별 포장째 지퍼백에 넣어 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분 두면 가나슈가 부드러워집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "가운데 가나슈가 녹아 흘러나옵니다."
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 6,
+          "maxSec": 10,
+          "note": "아주 짧게만 데우세요. 가나슈가 흐르면 늦습니다."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "흰 우유"
+    ],
+    "drinkReason": "초콜릿이 진해 담백하거나 쓴 음료가 필요합니다.",
+    "tip": "가나슈가 굳은 상태와 살짝 녹은 상태의 맛이 꽤 다릅니다. 둘 다 드셔 보세요.",
+    "caution": "아몬드가루가 들어 있는 제품이 많습니다. 견과류 알레르기가 있다면 확인하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "티그레",
+      "가나슈",
+      "초콜릿",
+      "구움과자"
+    ]
+  },
+  {
+    "id": "BR087",
+    "name": "붕어빵",
+    "aliases": [
+      "붕어 빵",
+      "잉어빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🐟",
+    "description": "물고기 모양 틀에 반죽과 팥앙금을 넣어 구운 겨울 간식",
+    "texture": "겉은 바삭, 속은 촉촉한 앙금",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "식으면 눅눅해집니다. 갓 구운 것을 바로 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "눅눅해지기만 합니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 마리씩 종이호일로 나눠 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우면 갓 구운 것에 가까워집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330,
+          "note": "해동하지 않고 바로 구우세요."
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 25,
+          "note": "속은 데워지지만 겉은 눅눅해집니다."
+        },
+        "FROZEN": {
+          "minSec": 50,
+          "maxSec": 80,
+          "note": "해동 목적으로만 쓰고 마무리는 에어프라이어로 하세요."
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "기름 없이 약불에서 앞뒤로 지지세요."
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "팥의 단맛이 진해 담백한 음료가 잘 맞습니다.",
+    "tip": "냉동 붕어빵은 에어프라이어와 잘 맞습니다. 사 온 날 바로 냉동해 두세요.",
+    "caution": "속 앙금이 매우 뜨겁습니다. 한 김 식힌 뒤 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "붕어빵",
+      "팥",
+      "길거리",
+      "겨울",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR088",
+    "name": "국화빵",
+    "aliases": [
+      "국화 빵",
+      "풀빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🌼",
+    "description": "국화 모양 틀에 구워 팥을 채운 한입 크기 간식",
+    "texture": "겉은 바삭, 속은 촉촉함",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "작아서 금방 마릅니다. 당일 드세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "눅눅해지기만 합니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "지퍼백에 담아 냉동하고 필요한 만큼만 꺼내세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 에어프라이어에 구우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "작아서 금방 데워집니다."
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 12,
+          "maxSec": 18
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 55
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 60,
+          "maxSec": 120,
+          "note": "기름 없이 약불에서 굴려 가며 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "따뜻한 우유"
+    ],
+    "drinkReason": "한 번에 여러 개를 먹게 되므로 물리지 않을 담백한 음료가 좋습니다.",
+    "tip": "한 번에 다 데우지 말고 먹을 만큼만 꺼내세요.",
+    "caution": "속 앙금이 뜨겁습니다. 한 김 식힌 뒤 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "국화빵",
+      "팥",
+      "길거리",
+      "한입",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR089",
+    "name": "계란빵",
+    "aliases": [
+      "계란 빵",
+      "달걀빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🥚",
+    "description": "반죽 위에 달걀을 통째로 올려 구운 든든한 길거리 간식",
+    "texture": "폭신한 빵에 부드러운 달걀",
+    "sweetness": 2,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "달걀이 올라가 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "완전히 식힌 뒤 밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 14,
+        "note": "달걀 흰자에서 물이 나올 수 있습니다.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 2,
+      "thawNote": "냉장실에서 하룻밤 해동한 뒤 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "달걀이 과하게 익지 않도록 낮은 온도로 데우세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 40,
+          "note": "노른자가 터질 수 있으니 포크로 살짝 찔러 두세요."
+        }
+      },
+      "OVEN": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 300
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "담백하고 든든해 어떤 음료와도 무난합니다.",
+    "tip": "전자레인지에 데울 때는 노른자를 반드시 찔러 두세요. 터져서 튑니다.",
+    "caution": "달걀이 들어 있어 실온 보관은 피하고, 데울 때 속까지 충분히 익히세요.",
+    "soloFriendly": true,
+    "tags": [
+      "계란빵",
+      "달걀",
+      "길거리",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR090",
+    "name": "호두과자",
+    "aliases": [
+      "호두 과자",
+      "천안호두과자"
+    ],
+    "category": "간식빵",
+    "emoji": "🌰",
+    "description": "호두 모양 틀에 팥앙금과 호두를 넣어 구운 작은 과자빵",
+    "texture": "촉촉하고 부드러움",
+    "sweetness": 4,
+    "storage": {
+      "room": {
+        "days": 3,
+        "note": "개별 포장된 상태로 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "퍽퍽해지고 호두 향이 죽습니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "지퍼백에 담아 냉동하고 필요한 만큼만 꺼내세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 20분 두거나 에어프라이어로 짧게 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 180,
+          "maxSec": 240
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "속 앙금이 먼저 뜨거워집니다."
+        },
+        "FROZEN": {
+          "minSec": 30,
+          "maxSec": 50
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "따뜻한 우유"
+    ],
+    "drinkReason": "팥과 호두가 목이 메기 쉬워 마실 것이 반드시 필요합니다.",
+    "tip": "살짝 데우면 호두의 고소함이 훨씬 또렷해집니다.",
+    "caution": "호두가 들어 있습니다. 견과류 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "호두과자",
+      "호두",
+      "팥",
+      "한입"
+    ]
+  },
+  {
+    "id": "BR091",
+    "name": "인절미빵",
+    "aliases": [
+      "인절미 빵",
+      "콩가루빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍡",
+    "description": "콩가루를 듬뿍 묻히고 인절미와 크림을 넣은 쫀득한 빵",
+    "texture": "쫀득하고 부드러움",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "크림이 든 제품이 많아 당일 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 2,
+        "note": "떡이 단단해지지만 상하는 것은 늦춰집니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 해동한 뒤 실온에 10분 두면 떡이 부드러워집니다."
+    },
+    "heating": {
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 10,
+          "maxSec": 18,
+          "note": "떡의 쫀득함을 되살리는 데는 이 방법이 낫습니다."
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 55
+        }
+      },
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "콩가루가 날리고 떡은 겉만 딱딱해집니다."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "보리차"
+    ],
+    "drinkReason": "콩가루가 목에 붙어 마실 것이 반드시 함께 있어야 합니다.",
+    "tip": "콩가루가 많이 날립니다. 봉투째 들고 드시는 편이 편합니다.",
+    "caution": "떡이 들어 있어 목에 걸리기 쉽습니다. 아이나 어르신은 작게 잘라 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "인절미빵",
+      "인절미",
+      "콩가루",
+      "떡",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR092",
+    "name": "흑임자빵",
+    "aliases": [
+      "흑임자 빵",
+      "검은깨빵"
+    ],
+    "category": "간식빵",
+    "emoji": "⚫",
+    "description": "검은깨 앙금을 채워 고소함이 진한 검은빛 빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "밀봉해 서늘한 곳에 두세요.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "앙금이 단단해지지만 데우면 돌아옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "실온에서 30분 두거나 전자레인지로 짧게 해동하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FRIDGE": {
+          "tempC": 160,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "FRESH": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "앙금이 먼저 뜨거워집니다."
+        },
+        "DAY_OLD": {
+          "minSec": 15,
+          "maxSec": 20
+        },
+        "FRIDGE": {
+          "minSec": 20,
+          "maxSec": 30
+        },
+        "FROZEN": {
+          "minSec": 45,
+          "maxSec": 70
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "보리차"
+    ],
+    "drinkReason": "검은깨의 고소함이 곡물 음료와 결이 같아 자연스럽게 이어집니다.",
+    "tip": "앙금이 진해 반으로 갈라 나눠 먹어도 충분합니다.",
+    "caution": "깨가 들어 있습니다. 깨 알레르기가 있다면 피하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "흑임자빵",
+      "검은깨",
+      "앙금",
+      "간식빵"
+    ]
+  },
+  {
+    "id": "BR093",
+    "name": "쌀빵",
+    "aliases": [
+      "쌀 빵",
+      "미슐빵",
+      "글루텐프리빵"
+    ],
+    "category": "식사빵",
+    "emoji": "🍚",
+    "description": "밀가루 대신 쌀가루로 반죽해 담백하고 쫀득한 빵",
+    "texture": "쫀득하고 촉촉함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "쌀 반죽은 밀보다 빨리 굳습니다. 당일 드시는 편이 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "전분이 빠르게 굳어 딱딱해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 밀봉해 냉동하세요. 쌀빵은 냉동이 특히 유효합니다.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 5,
+      "thawNote": "전자레인지로 짧게 데우면 쫀득함이 돌아옵니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "겉만 마르기 쉬우니 짧게 보세요."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "쫀득함을 되살리는 데는 이 방법이 낫습니다."
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 55
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "약불에서 뚜껑을 덮고 데우세요."
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "흰 우유"
+    ],
+    "drinkReason": "단맛이 거의 없어 어떤 음료와도 부딪히지 않습니다.",
+    "tip": "쌀빵은 굳는 속도가 빠릅니다. 사 온 날 나눠서 바로 냉동해 두세요.",
+    "caution": "쌀빵이라도 제품에 따라 밀가루가 섞일 수 있습니다. 글루텐을 피해야 한다면 표시를 확인하세요.",
+    "soloFriendly": true,
+    "tags": [
+      "쌀빵",
+      "쌀가루",
+      "글루텐프리",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR094",
+    "name": "찹쌀빵",
+    "aliases": [
+      "찹쌀 빵",
+      "모찌빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍡",
+    "description": "찹쌀 반죽을 구워 쫀득함이 강하고 앙금을 채운 빵",
+    "texture": "아주 쫀득하고 쫄깃함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "식으면 급격히 단단해집니다. 당일 드시는 편이 좋습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "찹쌀이 굳어 씹기 힘들어집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 30,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FREEZER",
+      "freezeScore": 4,
+      "thawNote": "전자레인지로 짧게 데우면 쫀득함이 가장 잘 돌아옵니다."
+    },
+    "heating": {
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "minSec": 10,
+          "maxSec": 15,
+          "note": "쫀득함을 되살리는 데는 이 방법이 가장 낫습니다."
+        },
+        "FROZEN": {
+          "minSec": 35,
+          "maxSec": 55
+        }
+      },
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 160,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "겉은 살아나지만 속은 여전히 단단할 수 있습니다."
+        },
+        "FROZEN": {
+          "tempC": 160,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      }
+    },
+    "drinks": [
+      "보리차",
+      "흰 우유"
+    ],
+    "drinkReason": "쫀득해 목이 메기 쉬워 마실 것이 반드시 함께 있어야 합니다.",
+    "tip": "전자레인지로 10초만 데워도 갓 구운 것처럼 늘어납니다.",
+    "caution": "쫀득해 목에 걸리기 쉽습니다. 아이나 어르신은 작게 잘라 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "찹쌀빵",
+      "찹쌀",
+      "모찌",
+      "전자레인지",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR095",
+    "name": "녹차빵",
+    "aliases": [
+      "녹차 빵",
+      "말차빵"
+    ],
+    "category": "간식빵",
+    "emoji": "🍵",
+    "description": "말차를 넣어 은은하게 쌉쌀하고 크림을 채운 초록빛 빵",
+    "texture": "부드럽고 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 1,
+        "note": "크림이 든 제품이 많아 당일 드시는 편이 안전합니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 3,
+        "note": "밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 개씩 랩으로 감싸 냉동하세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "냉장실에서 해동하세요. 실온 해동은 크림이 처집니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 150,
+          "minSec": 90,
+          "maxSec": 150,
+          "note": "크림이 든 제품은 데우지 마세요."
+        },
+        "FROZEN": {
+          "tempC": 150,
+          "minSec": 210,
+          "maxSec": 300
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 10,
+          "maxSec": 18,
+          "note": "크림이 든 제품은 분리될 수 있습니다."
+        },
+        "FROZEN": {
+          "minSec": 40,
+          "maxSec": 60
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "말차의 쌉쌀함이 우유의 단맛과 만나면 부드럽게 정리됩니다.",
+    "tip": "크림이 들어 있다면 데우지 말고 차갑게 드세요. 말차 향도 더 또렷합니다.",
+    "caution": null,
+    "soloFriendly": true,
+    "tags": [
+      "녹차빵",
+      "말차",
+      "크림",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR096",
+    "name": "바질빵",
+    "aliases": [
+      "바질 빵",
+      "허브빵",
+      "바질 치아바타"
+    ],
+    "category": "식사빵",
+    "emoji": "🌿",
+    "description": "바질과 허브를 반죽에 넣어 향이 진한 담백한 빵",
+    "texture": "쫄깃하고 담백함",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 2,
+        "note": "종이봉투에 담아 두면 껍질이 살아 있습니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "허브 향이 빠지고 빵은 퍽퍽해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 45,
+        "note": "잘라서 한 조각씩 밀봉하세요.",
+        "recommended": true
+      },
+      "best": "ROOM",
+      "freezeScore": 4,
+      "thawNote": "해동 없이 바로 오븐이나 에어프라이어에 구우면 향이 살아납니다."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 170,
+          "minSec": 120,
+          "maxSec": 180
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "허브 향이 날아가고 반죽이 질겨집니다. 오븐이나 에어프라이어를 쓰세요."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 180,
+          "minSec": 180,
+          "maxSec": 240,
+          "note": "예열 후 구우세요."
+        },
+        "FROZEN": {
+          "tempC": 180,
+          "minSec": 330,
+          "maxSec": 450
+        }
+      },
+      "PAN": {
+        "DAY_OLD": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "올리브유를 살짝 둘러 단면을 지지세요."
+        }
+      }
+    },
+    "drinks": [
+      "탄산수",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "허브 향이 강해 맑은 음료가 향을 가리지 않습니다.",
+    "tip": "올리브유와 발사믹에 찍어 먹으면 향이 가장 잘 살아납니다.",
+    "caution": null,
+    "soloFriendly": false,
+    "tags": [
+      "바질빵",
+      "바질",
+      "허브",
+      "유럽빵",
+      "냉동"
+    ]
+  },
+  {
+    "id": "BR097",
+    "name": "프렌치토스트",
+    "aliases": [
+      "프렌치 토스트",
+      "french toast"
+    ],
+    "category": "간식빵",
+    "emoji": "🍞",
+    "description": "식빵을 달걀물에 적셔 버터에 구운 촉촉한 아침 빵",
+    "texture": "겉은 살짝 바삭, 속은 아주 촉촉함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "달걀물이 배어 있어 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 2,
+        "note": "완전히 식힌 뒤 밀폐 용기에 담아 냉장하세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 21,
+        "note": "한 장씩 종이호일로 나눠 지퍼백에 넣으세요.",
+        "recommended": true
+      },
+      "best": "FRIDGE",
+      "freezeScore": 3,
+      "thawNote": "해동 없이 바로 팬이나 에어프라이어로 데우세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "tempC": 170,
+          "minSec": 150,
+          "maxSec": 210
+        },
+        "FROZEN": {
+          "tempC": 170,
+          "minSec": 270,
+          "maxSec": 360
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "minSec": 25,
+          "maxSec": 40,
+          "note": "촉촉하지만 겉의 바삭함은 사라집니다."
+        }
+      },
+      "PAN": {
+        "FRIDGE": {
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "버터를 조금 두르고 약불에서 앞뒤로 지지세요."
+        },
+        "FROZEN": {
+          "minSec": 240,
+          "maxSec": 330
+        }
+      },
+      "TOASTER": {
+        "FRIDGE": {
+          "level": "보통",
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "달걀물이 떨어질 수 있어 받침을 확인하세요."
+        }
+      }
+    },
+    "drinks": [
+      "흰 우유",
+      "따뜻한 아메리카노"
+    ],
+    "drinkReason": "달걀과 버터가 진해 담백한 음료가 함께 있으면 좋습니다.",
+    "tip": "팬에 다시 지지는 것이 가장 낫습니다. 겉은 바삭하고 속은 촉촉해집니다.",
+    "caution": "달걀이 들어 있어 실온 보관은 피하고, 데울 때 속까지 충분히 익히세요.",
+    "soloFriendly": true,
+    "tags": [
+      "프렌치토스트",
+      "달걀",
+      "식빵",
+      "냉장",
+      "팬"
+    ]
+  },
+  {
+    "id": "BR098",
+    "name": "러스크",
+    "aliases": [
+      "러스크빵",
+      "rusk",
+      "빵과자"
+    ],
+    "category": "간식빵",
+    "emoji": "🍞",
+    "description": "빵을 얇게 썰어 버터와 설탕을 발라 두 번 구운 바삭한 과자",
+    "texture": "아주 바삭하고 딱딱함",
+    "sweetness": 3,
+    "storage": {
+      "room": {
+        "days": 14,
+        "note": "밀폐 용기에 넣어 두면 오래 바삭합니다. 이 빵은 실온이 정답입니다.",
+        "recommended": true
+      },
+      "fridge": {
+        "days": 0,
+        "note": "습기를 먹어 눅눅해집니다.",
+        "recommended": false
+      },
+      "freezer": {
+        "days": 0,
+        "note": "냉동할 이유가 없습니다. 실온 밀폐가 훨씬 낫습니다.",
+        "recommended": false
+      },
+      "best": "ROOM",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 밀폐 용기에 실온 보관하세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 60,
+          "maxSec": 90,
+          "note": "눅눅해졌을 때만 짧게 구우세요. 설탕이 쉽게 탑니다."
+        }
+      },
+      "MICROWAVE": {
+        "DAY_OLD": {
+          "notRecommended": true,
+          "reason": "설탕이 녹고 눅눅해져 바삭함이 완전히 사라집니다."
+        }
+      },
+      "OVEN": {
+        "DAY_OLD": {
+          "tempC": 150,
+          "minSec": 120,
+          "maxSec": 180,
+          "note": "낮은 온도로 수분만 날리세요."
+        }
+      }
+    },
+    "drinks": [
+      "따뜻한 아메리카노",
+      "홍차"
+    ],
+    "drinkReason": "딱딱하고 달아 뜨거운 음료에 적셔 먹기 좋습니다.",
+    "tip": "눅눅해졌다면 150℃ 오븐에서 2분이면 바삭함이 돌아옵니다.",
+    "caution": "매우 단단합니다. 치아가 약하다면 음료에 적셔 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "러스크",
+      "바삭",
+      "빵과자",
+      "실온"
+    ]
+  },
+  {
+    "id": "BR099",
+    "name": "크루아상샌드위치",
+    "aliases": [
+      "크루아상 샌드위치",
+      "크로와상샌드위치"
+    ],
+    "category": "식사빵",
+    "emoji": "🥪",
+    "description": "크루아상을 갈라 햄과 채소를 끼운 든든한 샌드위치",
+    "texture": "겉은 바삭, 속은 촉촉한 속재료",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "햄과 채소가 들어 있어 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 1,
+        "note": "당일 또는 다음 날까지만 드세요. 채소에서 물이 나옵니다.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "채소가 물러지고 소스가 분리됩니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 냉장 보관 후 하루 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "채소가 시들고 소스가 흘러내립니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크루아상 결이 무너지고 채소에서 물이 나옵니다."
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "버터와 햄의 기름진 맛을 산미와 탄산이 정리해 줍니다.",
+    "tip": "채소가 든 샌드위치는 데우지 않습니다. 냉장에서 꺼내 바로 드세요.",
+    "caution": "햄과 채소가 들어 있어 반드시 냉장 보관하고 하루 안에 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "크루아상샌드위치",
+      "샌드위치",
+      "햄",
+      "냉장"
+    ]
+  },
+  {
+    "id": "BR100",
+    "name": "베이글샌드위치",
+    "aliases": [
+      "베이글 샌드위치",
+      "연어베이글"
+    ],
+    "category": "식사빵",
+    "emoji": "🥯",
+    "description": "베이글을 갈라 크림치즈와 연어, 채소를 끼운 샌드위치",
+    "texture": "쫄깃한 베이글에 부드러운 크림치즈",
+    "sweetness": 1,
+    "storage": {
+      "room": {
+        "days": 0,
+        "note": "크림치즈와 연어가 들어 있어 실온에 두면 빠르게 상합니다.",
+        "recommended": false
+      },
+      "fridge": {
+        "days": 1,
+        "note": "당일 또는 다음 날까지만 드세요.",
+        "recommended": true
+      },
+      "freezer": {
+        "days": 0,
+        "note": "크림치즈가 분리되고 채소가 물러집니다.",
+        "recommended": false
+      },
+      "best": "FRIDGE",
+      "freezeScore": 1,
+      "thawNote": "냉동에 맞지 않습니다. 냉장 보관 후 하루 안에 드세요."
+    },
+    "heating": {
+      "AIRFRYER": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림치즈가 녹아 흘러나오고 연어가 익어 버립니다. 차갑게 드세요."
+        }
+      },
+      "MICROWAVE": {
+        "FRIDGE": {
+          "notRecommended": true,
+          "reason": "크림치즈가 분리되고 베이글이 질겨집니다."
+        }
+      }
+    },
+    "drinks": [
+      "아이스 아메리카노",
+      "탄산수"
+    ],
+    "drinkReason": "크림치즈의 유지방과 연어의 기름을 산미가 정리해 줍니다.",
+    "tip": "베이글만 먼저 구워 식힌 뒤 속재료를 끼우면 눅눅해지지 않습니다.",
+    "caution": "훈제 연어와 크림치즈가 들어 있어 반드시 냉장 보관하고 하루 안에 드세요.",
+    "soloFriendly": true,
+    "tags": [
+      "베이글샌드위치",
+      "베이글",
+      "크림치즈",
+      "연어",
+      "냉장"
+    ]
+  }
+]

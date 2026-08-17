@@ -1,0 +1,145 @@
+name: 데이터 자동 갱신 및 배포
+
+on:
+  schedule:
+    # 매일 KST 05:00 (UTC 20:00 전날). LOCALDATA가 새벽에 갱신되므로 그 이후에 돈다.
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # 수집기나 데이터가 바뀔 때만 다시 돈다. 문서 수정으로 원본을 두드리지 않는다.
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - '.github/workflows/daily.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 동시에 두 번 돌면 서로의 커밋을 밀어낸다. 앞선 실행을 취소하지는 않는다.
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: 수집 및 커밋
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # 매장 수집. 인증키가 필요 없다 — 이 자료는 OpenAPI가 아니라 파일 데이터라
+      # LOCALDATA가 전국 전체분 CSV를 상시 공개한다(매일 갱신, 2일 전 기준).
+      # 내려받기에 실패하면 기존 데이터를 유지한 채 넘어간다.
+      - name: 매장 데이터 수집
+        id: stores
+        continue-on-error: true
+        env:
+          STORE_REGION: ${{ vars.STORE_REGION }}
+        run: node scripts/update-stores.mjs
+
+      # 공식 출처에서 브랜드 행사를 수집한다(홈플러스 전단·파리바게뜨 외 6곳).
+      # 전단은 주 단위로 바뀌므로 매일 돌려 갱신일을 놓치지 않는다.
+      # 실패해도 기존 행사는 유지된다.
+      - name: 브랜드 행사 수집
+        id: events
+        continue-on-error: true
+        run: node scripts/update-leaflet-events.mjs
+
+      - name: 만료 행사 점검
+        run: node scripts/check-events.mjs
+
+      - name: 데이터 상태 갱신
+        run: node scripts/daily-status.mjs
+
+      - name: 변경분 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data STATUS.md
+          # 실제로 바뀐 게 있을 때만 커밋한다. 매일 빈 커밋을 쌓지 않는다.
+          if git diff --cached --quiet; then
+            echo "변경 없음. 커밋을 건너뜁니다."
+          else
+            git commit -m "chore: 데이터 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
+            git push
+          fi
+
+      # Pages 루트에 data/가 오도록 _site 아래에 담는다.
+      - name: 배포본 구성
+        run: |
+          mkdir -p _site
+          cp -r data _site/data
+          cp LICENSE.md _site/LICENSE.md
+          STORES=$(node -e "console.log(require('./data/stores/index.json').regions.reduce((a,r)=>a+r.count,0).toLocaleString('ko-KR'))")
+          REGIONS=$(node -e "console.log(require('./data/stores/index.json').regions.length)")
+          EVENTS=$(node -e "console.log(require('./data/events.json').length)")
+          BREADS=$(node -e "console.log(require('./data/breads.json').length)")
+          UPDATED=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          cat > _site/index.html <<HTML
+          <!doctype html>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>오늘 빵 할인 — 공개 데이터</title>
+          <style>body{font-family:system-ui,sans-serif;max-width:44rem;margin:3rem auto;padding:0 1rem;line-height:1.7}code{background:#f4f4f5;padding:.15rem .4rem;border-radius:.25rem}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #e4e4e7;padding:.4rem .2rem;text-align:left}</style>
+          <h1>오늘 빵 할인 — 공개 데이터</h1>
+          <p>전국 제과점 <strong>${STORES}곳</strong>(${REGIONS}개 시도) · 브랜드 행사 <strong>${EVENTS}건</strong> · 빵 <strong>${BREADS}종</strong>. 매일 05:00(KST) 갱신. 최종 ${UPDATED}.</p>
+          <h2>내려받기</h2>
+          <table>
+          <tr><th>파일</th><th>내용</th></tr>
+          <tr><td><code>data/stores/index.json</code></td><td>시도 목록과 경계상자</td></tr>
+          <tr><td><code>data/stores/{시도}.json</code></td><td>해당 시도 매장</td></tr>
+          <tr><td><code>data/events.json</code></td><td>브랜드 행사</td></tr>
+          <tr><td><code>data/brands.json</code></td><td>브랜드</td></tr>
+          <tr><td><code>data/breads.json</code></td><td>빵 백과</td></tr>
+          <tr><td><code>data/recipes.json</code></td><td>활용 레시피</td></tr>
+          <tr><td><code>data/meta.json</code></td><td>갱신 시점</td></tr>
+          </table>
+          <h2>출처</h2>
+          <p>매장: 행정안전부 지방행정 인허가데이터(LOCALDATA) 식품 제과점영업 — 제1유형(출처표시).
+          행사: 각 브랜드 공식 페이지 및 홈플러스 마트전단. 행사마다 <code>sourceUrl</code>에 원문 주소를 담았다.</p>
+          <p><a href="LICENSE.md">라이선스</a> · <a href="https://github.com/logichub24/today-bread-data">저장소</a></p>
+          HTML
+
+      - name: 결과 요약
+        run: |
+          {
+            echo "### 데이터 갱신 결과"
+            echo ""
+            echo "| 단계 | 결과 |"
+            echo "| --- | --- |"
+            echo "| 매장 수집 | ${{ steps.stores.outcome }} |"
+            echo "| 행사 수집 | ${{ steps.events.outcome }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          cat STATUS.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 수집 실패 알림
+        if: ${{ steps.stores.outcome == 'failure' || steps.events.outcome == 'failure' }}
+        run: |
+          echo "::warning::수집 일부가 실패했습니다. 해당 항목은 기존 데이터를 그대로 사용합니다."
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Pages 배포
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

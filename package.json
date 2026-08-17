@@ -1,0 +1,17 @@
+{
+  "name": "today-bread-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "「오늘 빵 할인」 공개 데이터 — 전국 제과점 위치와 브랜드 행사를 매일 수집해 공개한다.",
+  "scripts": {
+    "data:stores": "node --env-file-if-exists=.env scripts/update-stores.mjs",
+    "data:events": "node scripts/update-leaflet-events.mjs",
+    "data:check": "node scripts/check-events.mjs",
+    "data:status": "node scripts/daily-status.mjs",
+    "data:geocode": "node --env-file-if-exists=.env scripts/geocode-missing.mjs"
+  },
+  "dependencies": {
+    "proj4": "^2.21.0"
+  }
+}
