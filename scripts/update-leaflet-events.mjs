@@ -145,7 +145,18 @@ const kept = existing.filter(
   (e) => isOwned(e.id) && [...failedPrefixes].some((p) => e.id.startsWith(p)),
 );
 
-const next = [...manual, ...kept, ...collected];
+// 이미 알던 행사는 처음 본 날짜를 지킨다.
+//
+// 매번 collectedAt으로 덮어쓰면 어제도 있던 행사가 오늘 또 '새 행사'가 된다.
+// 실제로 첫 수집일에 40건이 한꺼번에 들어와 전부 새 행사로 표시됐다.
+// createdAt은 "우리가 처음 본 날"이어야지 "마지막으로 확인한 날"이 아니다.
+const firstSeen = new Map(existing.map((e) => [e.id, e.createdAt]));
+const withFirstSeen = collected.map((e) =>
+  firstSeen.has(e.id) ? { ...e, createdAt: firstSeen.get(e.id) } : e,
+);
+const freshCount = withFirstSeen.filter((e) => !firstSeen.has(e.id)).length;
+
+const next = [...manual, ...kept, ...withFirstSeen];
 await writeFile(EVENTS_PATH, `${JSON.stringify(next, null, 2)}\n`);
 if (kept.length > 0) {
   console.log('');
@@ -163,4 +174,5 @@ if (needsReview.length > 0) {
 console.log(
   `반영 완료 — 직접 등록 ${manual.length}건 + 유지 ${kept.length}건 + 수집 ${collected.length}건 = ${next.length}건`,
 );
+console.log(`이번에 처음 본 행사 ${freshCount}건 (나머지는 처음 본 날짜를 유지했습니다)`);
 console.log(`(이전 수집분 ${previous}건 중 ${previous - kept.length}건을 교체했습니다)`);
