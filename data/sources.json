@@ -10,8 +10,8 @@
     "name": "몽블랑제(홈플러스 전단)",
     "lastAttemptAt": "2026-08-24",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 1,
-    "lastError": "오류 없이 0건"
+    "failStreak": 0,
+    "lastError": null
   },
   "PB-": {
     "name": "파리바게뜨 공식",
@@ -38,15 +38,15 @@
     "name": "브레댄코 공식",
     "lastAttemptAt": "2026-08-24",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 1,
-    "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON"
+    "failStreak": 0,
+    "lastError": null
   },
   "PC-": {
     "name": "파리크라상 공식",
     "lastAttemptAt": "2026-08-24",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 1,
-    "lastError": "오류 없이 0건"
+    "failStreak": 0,
+    "lastError": null
   },
   "DC-": {
     "name": "떡보의하루 공식",

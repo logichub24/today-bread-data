@@ -56,6 +56,14 @@ const needsReview = [];
  * 실패한 접두사는 기존 것을 그대로 남긴다.
  */
 const failedPrefixes = new Set();
+/**
+ * 출처가 멀쩡한데 결과가 정말 0건인 경우.
+ *
+ * 홈플러스 전단은 상품이 175건 돌아왔는데 그중 몽블랑제가 없을 수 있다. 그건 차단이 아니라
+ * "이번 주엔 그 브랜드 행사가 없다"이므로, 지난주 행사를 붙잡고 있으면 안 된다.
+ * 아래 '조용한 0건' 판정에서 빼 준다.
+ */
+const verifiedEmpty = new Set();
 /** 출처별 이번 실행 결과. 실패해도 기존 데이터를 지키므로 낡는 것을 여기로 알린다. */
 const health = await readHealth();
 
@@ -63,11 +71,13 @@ const health = await readHealth();
 try {
   const info = await fetchLeafletInfo();
   console.log(`홈플러스 전단 ${info.leafletNo}호 · ${info.period.start} ~ ${info.period.end}`);
-  const items = await fetchLeafletItems(info.leafletNo);
+  const items = await fetchLeafletItems(info.leafletNo, info.categoryId);
   const events = TARGETS.flatMap((t) => toEvents(items, { ...t, period: info.period, collectedAt }));
   console.log(`  상품 ${items.length.toLocaleString('ko-KR')}건 → 행사 ${events.length}건`);
   for (const e of events) console.log(`    ${e.title}`);
   collected.push(...events);
+  // 상품을 실제로 받아 왔다면 전단은 멀쩡하다. 그 안에 몽블랑제가 없는 것은 사실이다.
+  if (items.length > 0) verifiedEmpty.add('HP-');
   record(health, 'HP-', { name: '몽블랑제(홈플러스 전단)', ok: true, today: collectedAt });
 } catch (err) {
   // 한 출처가 막혀도 다른 출처는 진행한다. 실패한 것은 기존 데이터를 남긴다.
@@ -147,6 +157,8 @@ if (collected.length === 0 && previous > 0) {
 const countBy = (list, prefix) => list.filter((e) => e.id.startsWith(prefix)).length;
 for (const prefix of OWNED_PREFIXES) {
   if (failedPrefixes.has(prefix)) continue;
+  // 출처가 멀쩡한데 0건이면 지난 행사를 붙잡지 않는다. 기간이 끝난 것은 떠나야 한다.
+  if (verifiedEmpty.has(prefix)) continue;
   if (countBy(collected, prefix) === 0 && countBy(existing, prefix) > 0) {
     console.error(`  ${prefix} 수집 0건 — 어제는 있었습니다. 차단일 수 있어 기존 것을 남깁니다.`);
     failedPrefixes.add(prefix);

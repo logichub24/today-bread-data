@@ -11,8 +11,15 @@ const BASE = 'https://mfront.homeplus.co.kr';
 const LEAFLET_URL = `${BASE}/leaflet?categoryId=406&sort=RANK`;
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36';
-/** 전단 "전체" 카테고리. 신선·냉장 등으로 나눠 봐도 합집합은 여기에 다 들어 있다. */
-const CATEGORY_ID = 406;
+/**
+ * 전단 "전체" 카테고리 번호.
+ *
+ * **전단마다 바뀐다.** 296호는 406이었는데 297호는 411이 됐고, 낡은 번호로 부르면
+ * 200에 `dataList: []`가 돌아온다. 오류가 아니라 빈 목록이라 조용히 0건이 되고,
+ * 그러면 "이번 주엔 몽블랑제가 없다"로 오해하게 된다.
+ * 그래서 코드에 박지 않고 전단 정보에서 읽는다. 이 값은 마지막 방어선이다.
+ */
+const FALLBACK_CATEGORY_ID = 411;
 /** 브라우저가 쓰는 값과 맞춘다. 더 크게 요청하면 응답이 비어 온다. */
 const PAGE_SIZE = 20;
 const MAX_PAGES = 40;
@@ -43,15 +50,21 @@ export async function fetchLeafletInfo() {
   const data = JSON.parse(block[1]).data;
   const { leafletNo, dispStartDt: start, dispEndDt: end } = data ?? {};
   if (!leafletNo || !start || !end) throw new Error('전단 번호나 기간이 비어 있습니다.');
-  return { leafletNo: Number(leafletNo), period: { start, end } };
+
+  // 카테고리 목록에서 "전체"를 찾는다. 이름이 바뀌면 첫 번째 것을 쓴다.
+  const cats = Array.isArray(data.categoryList) ? data.categoryList : [];
+  const whole = cats.find((c) => c.cateNm === '전체') ?? cats[0];
+  const categoryId = Number(whole?.cateNo) || FALLBACK_CATEGORY_ID;
+
+  return { leafletNo: Number(leafletNo), categoryId, period: { start, end } };
 }
 
-/** 전단 상품을 모두 읽는다. */
-export async function fetchLeafletItems(leafletNo) {
+/** 전단 상품을 모두 읽는다. 카테고리 번호는 fetchLeafletInfo가 준 값을 쓴다. */
+export async function fetchLeafletItems(leafletNo, categoryId = FALLBACK_CATEGORY_ID) {
   const items = [];
   for (let page = 0; page < MAX_PAGES; page += 1) {
     const url =
-      `${BASE}/leaf/item.json?categoryId=${CATEGORY_ID}&leafletNo=${leafletNo}` +
+      `${BASE}/leaf/item.json?categoryId=${categoryId}&leafletNo=${leafletNo}` +
       `&limit=${PAGE_SIZE}&offset=${page * PAGE_SIZE}&sort=RANK`;
     const res = await fetch(url, { headers, signal: AbortSignal.timeout(30000) });
     if (!res.ok) throw new Error(`전단 API 응답 ${res.status}`);
