@@ -33,6 +33,7 @@ import {
   fetchTljEvents,
   toEvents as toBrandEvents,
 } from './lib/brand-events.mjs';
+import { readHealth, record, writeHealth } from './lib/source-health.mjs';
 
 const EVENTS_PATH = fileURLToPath(new URL('../data/events.json', import.meta.url));
 /** 이 스크립트가 소유하는 행사의 id 접두사. 나머지는 손으로 등록한 것이다. */
@@ -55,6 +56,8 @@ const needsReview = [];
  * 실패한 접두사는 기존 것을 그대로 남긴다.
  */
 const failedPrefixes = new Set();
+/** 출처별 이번 실행 결과. 실패해도 기존 데이터를 지키므로 낡는 것을 여기로 알린다. */
+const health = await readHealth();
 
 // --- 홈플러스 전단 (몽블랑제) ---
 try {
@@ -65,10 +68,12 @@ try {
   console.log(`  상품 ${items.length.toLocaleString('ko-KR')}건 → 행사 ${events.length}건`);
   for (const e of events) console.log(`    ${e.title}`);
   collected.push(...events);
+  record(health, 'HP-', { name: '몽블랑제(홈플러스 전단)', ok: true, today: collectedAt });
 } catch (err) {
   // 한 출처가 막혀도 다른 출처는 진행한다. 실패한 것은 기존 데이터를 남긴다.
   console.error(`  홈플러스 전단 실패: ${err.message}`);
   failedPrefixes.add('HP-');
+  record(health, 'HP-', { name: '몽블랑제(홈플러스 전단)', ok: false, error: err.message, today: collectedAt });
 }
 
 // --- 파리바게뜨 공식 프로모션 ---
@@ -77,9 +82,11 @@ try {
   console.log(`파리바게뜨 공식 → 진행 중 ${events.length}건`);
   for (const e of events) console.log(`    ${e.startDate}~${e.endDate}  ${e.title.slice(0, 40)}`);
   collected.push(...events);
+  record(health, 'PB-', { name: '파리바게뜨 공식', ok: true, today: collectedAt });
 } catch (err) {
   console.error(`  파리바게뜨 실패: ${err.message}`);
   failedPrefixes.add('PB-');
+  record(health, 'PB-', { name: '파리바게뜨 공식', ok: false, error: err.message, today: collectedAt });
 }
 
 // --- 뚜레쥬르·던킨 공식 이벤트 ---
@@ -107,9 +114,16 @@ for (const src of [
     const review = raw.filter((e) => e.needsReview);
     for (const e of review) needsReview.push(`${src.brandName} · ${e.title}`);
     collected.push(...events);
+    record(health, `${ID_PREFIX[src.brandId]}-`, { name: `${src.brandName} 공식`, ok: true, today: collectedAt });
   } catch (err) {
     console.error(`  ${src.brandName} 실패: ${err.message}`);
     failedPrefixes.add(`${ID_PREFIX[src.brandId]}-`);
+    record(health, `${ID_PREFIX[src.brandId]}-`, {
+      name: `${src.brandName} 공식`,
+      ok: false,
+      error: err.message,
+      today: collectedAt,
+    });
   }
 }
 
@@ -136,6 +150,12 @@ for (const prefix of OWNED_PREFIXES) {
   if (countBy(collected, prefix) === 0 && countBy(existing, prefix) > 0) {
     console.error(`  ${prefix} 수집 0건 — 어제는 있었습니다. 차단일 수 있어 기존 것을 남깁니다.`);
     failedPrefixes.add(prefix);
+    record(health, prefix, {
+      name: health[prefix]?.name ?? prefix,
+      ok: false,
+      error: '오류 없이 0건',
+      today: collectedAt,
+    });
   }
 }
 
@@ -176,3 +196,5 @@ console.log(
 );
 console.log(`이번에 처음 본 행사 ${freshCount}건 (나머지는 처음 본 날짜를 유지했습니다)`);
 console.log(`(이전 수집분 ${previous}건 중 ${previous - kept.length}건을 교체했습니다)`);
+
+await writeHealth(health);

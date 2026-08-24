@@ -6,6 +6,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { readAllStores } from './lib/read-stores.mjs';
+import { ageDays, alertAfter, readHealth } from './lib/source-health.mjs';
+import { daysBetween } from './lib/days.mjs';
 
 const DATA_DIR = fileURLToPath(new URL('../data', import.meta.url));
 const STORE_DIR = fileURLToPath(new URL('../data/stores', import.meta.url));
@@ -55,6 +57,18 @@ const shortfalls = Object.entries(counts).filter(
   ([k, v]) => MINIMUM[k] !== undefined && v < MINIMUM[k],
 );
 
+// 출처 건강성. 수집이 실패해도 기존 데이터를 지키는 구조라, 며칠째 못 받고 있는지를
+// 여기서 드러내지 않으면 조용히 낡는다.
+const health = await readHealth();
+const healthRows = Object.entries(health).map(([key, e]) => {
+  const age = ageDays(e, today, daysBetween);
+  const limit = alertAfter(key);
+  const overdue = age === null || age > limit;
+  const 상태 = age === null ? '한 번도 성공 못함' : age === 0 ? '오늘 갱신' : `${age}일 전`;
+  return { key, e, age, limit, overdue, 상태 };
+});
+const overdue = healthRows.filter((r) => r.overdue);
+
 const airfryer = breads.filter((b) => b.heating?.AIRFRYER).length;
 const microwave = breads.filter((b) => b.heating?.MICROWAVE).length;
 
@@ -67,6 +81,15 @@ const brandedStores = stores.filter((s) => s.brandId).length;
 const activeEvents = events.filter((e) => e.endDate >= today).length;
 const needCheck = events.filter((e) => e.verificationStatus === 'CHECK_NEEDED').length;
 const endingToday = events.filter((e) => e.endDate === today).length;
+
+// 이 파일은 템플릿 문자열이 많아 줄바꿈 이스케이프가 섞이면 읽기 어렵다. 상수로 둔다.
+const NEWLINE = String.fromCharCode(10);
+const overdueNote =
+  overdue.length > 0
+    ? `${NEWLINE}> ⚠️ ${overdue.length}곳이 기한을 넘겼습니다: ${overdue
+        .map((r) => `${r.e.name}(${r.e.lastError ?? '원인 미상'})`)
+        .join(', ')}`
+    : '';
 
 const ok = shortfalls.length === 0 && airfryer >= 15 && microwave >= 15;
 
@@ -90,6 +113,21 @@ ${rows.join('\n')}
 | SEED | ${seedStores} | 개발용 시드. 출시 전 교체 대상 |
 
 브랜드 매장 ${brandedStores}곳 · 동네빵집 ${stores.length - brandedStores}곳
+
+## 출처 건강성
+
+마지막으로 실제 수집에 성공한 날이다. 실패해도 기존 데이터를 지키므로,
+이 날짜가 곧 그 출처 데이터의 나이다.
+
+| 출처 | 마지막 성공 | 경과 | 연속 실패 | 상태 |
+| --- | --- | --- | ---: | :---: |
+${healthRows
+  .map(
+    (r) =>
+      `| ${r.e.name} | ${r.e.lastSuccessAt ?? '—'} | ${r.상태} | ${r.e.failStreak} | ${r.overdue ? `⚠️ ${r.limit}일 초과` : '✅'} |`,
+  )
+  .join(NEWLINE)}
+${overdueNote}
 
 ## 행사 상태
 

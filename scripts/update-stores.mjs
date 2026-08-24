@@ -16,6 +16,8 @@ import { buildStores, DEFAULT_REGION } from './lib/localdata.mjs';
 import { loadGeocodeCache } from './lib/geocode-cache.mjs';
 import { readAllStores } from './lib/read-stores.mjs';
 import { writeRegionFiles } from './lib/split-stores.mjs';
+import { fetchWithRetry } from './lib/http.mjs';
+import { readHealth, record, writeHealth } from './lib/source-health.mjs';
 
 const STORE_DIR = fileURLToPath(new URL('../data/stores', import.meta.url));
 
@@ -36,21 +38,28 @@ const collectedAt = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slic
 console.log(`매장 갱신 시작 (${collectedAt} KST, ${REGION ?? '전국'})`);
 console.log(`내려받는 중: ${DOWNLOAD_URL}`);
 
+const health = await readHealth();
+
+/** 실패해도 기존 데이터는 그대로 둔다. 앱이 빈 지도가 되면 안 된다. */
+async function giveUp(reason) {
+  console.error(`${reason} 기존 데이터를 유지합니다.`);
+  record(health, 'stores', { name: '매장(LOCALDATA)', ok: false, error: reason, today: collectedAt });
+  await writeHealth(health);
+  process.exit(1);
+}
+
 let text;
 try {
-  const res = await fetch(DOWNLOAD_URL, {
+  const res = await fetchWithRetry(DOWNLOAD_URL, {
     headers: { 'User-Agent': USER_AGENT, Referer: REFERER },
-    signal: AbortSignal.timeout(180000),
+    label: 'LOCALDATA 전국 CSV',
   });
-  if (!res.ok) throw new Error(`응답 ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
   console.log(`받음: ${(buf.length / 1024 / 1024).toFixed(1)}MB`);
   // 헤더는 UTF-8이라고 하지만 실제 내용은 EUC-KR이다. 그대로 믿으면 전부 깨진다.
   text = new TextDecoder('euc-kr').decode(buf);
 } catch (err) {
-  // 받지 못해도 기존 데이터는 그대로 둔다. 앱이 빈 지도가 되면 안 된다.
-  console.error(`내려받기 실패: ${err.message}. 기존 데이터를 유지합니다.`);
-  process.exit(1);
+  await giveUp(`내려받기 실패: ${err.message}.`);
 }
 
 const rows = parseCsvToObjects(text);
@@ -62,12 +71,10 @@ const existing = await readAllStores(STORE_DIR).catch(() => []);
 
 // 안전장치: 부분 장애 결과를 커밋하면 앱에서 매장이 통째로 사라진다.
 if (stores.length < MIN_ACCEPTABLE) {
-  console.error(`결과 ${stores.length}곳으로 기준(${MIN_ACCEPTABLE}) 미달. 기존 데이터를 유지합니다.`);
-  process.exit(1);
+  await giveUp(`결과 ${stores.length}곳으로 기준(${MIN_ACCEPTABLE}) 미달.`);
 }
 if (existing.length > 0 && stores.length < existing.length * 0.7) {
-  console.error(`직전 ${existing.length}곳 대비 30% 이상 급감. 반영하지 않습니다.`);
-  process.exit(1);
+  await giveUp(`직전 ${existing.length}곳 대비 30% 이상 급감.`);
 }
 
 const index = await writeRegionFiles(STORE_DIR, stores, collectedAt);
@@ -75,3 +82,6 @@ const index = await writeRegionFiles(STORE_DIR, stores, collectedAt);
 const branded = stores.filter((s) => s.brandId).length;
 console.log(`반영 완료 — 브랜드 매장 ${branded.toLocaleString('ko-KR')}곳, 동네빵집 ${(stores.length - branded).toLocaleString('ko-KR')}곳`);
 console.log(`이전 ${existing.length.toLocaleString('ko-KR')}곳 → 현재 ${stores.length.toLocaleString('ko-KR')}곳 · 지역 ${index.regions.length}개`);
+
+record(health, 'stores', { name: '매장(LOCALDATA)', ok: true, today: collectedAt });
+await writeHealth(health);

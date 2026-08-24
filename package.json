@@ -9,7 +9,8 @@
     "data:events": "node scripts/update-leaflet-events.mjs",
     "data:check": "node scripts/check-events.mjs",
     "data:status": "node scripts/daily-status.mjs",
-    "data:geocode": "node --env-file-if-exists=.env scripts/geocode-missing.mjs"
+    "data:geocode": "node --env-file-if-exists=.env scripts/geocode-missing.mjs",
+    "data:sources": "node scripts/check-sources.mjs"
   },
   "dependencies": {
     "proj4": "^2.21.0"
