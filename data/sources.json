@@ -38,15 +38,15 @@
     "name": "브레댄코 공식",
     "lastAttemptAt": "2026-08-24",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 0,
-    "lastError": null
+    "failStreak": 1,
+    "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON"
   },
   "PC-": {
     "name": "파리크라상 공식",
     "lastAttemptAt": "2026-08-24",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 0,
-    "lastError": null
+    "failStreak": 1,
+    "lastError": "오류 없이 0건"
   },
   "DC-": {
     "name": "떡보의하루 공식",
