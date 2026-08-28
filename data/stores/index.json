@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-27",
-  "total": 19989,
+  "generatedAt": "2026-08-28",
+  "total": 19990,
   "regions": [
     {
       "slug": "gyeonggi",
@@ -140,7 +140,7 @@
     {
       "slug": "sejong",
       "name": "세종특별자치시",
-      "count": 141,
+      "count": 142,
       "minLat": 36.439733,
       "maxLat": 36.732319,
       "minLng": 127.151042,
