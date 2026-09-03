@@ -1,57 +1,57 @@
 {
   "stores": {
     "name": "매장(LOCALDATA)",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   },
   "HP-": {
     "name": "몽블랑제(홈플러스 전단)",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   },
   "PB-": {
     "name": "파리바게뜨 공식",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   },
   "TL-": {
     "name": "뚜레쥬르 공식",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   },
   "DK-": {
     "name": "던킨 공식",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   },
   "BN-": {
     "name": "브레댄코 공식",
-    "lastAttemptAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
     "lastSuccessAt": "2026-08-24",
-    "failStreak": 11,
+    "failStreak": 12,
     "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON"
   },
   "PC-": {
     "name": "파리크라상 공식",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 1,
     "lastError": "오류 없이 0건"
   },
   "DC-": {
     "name": "떡보의하루 공식",
-    "lastAttemptAt": "2026-09-03",
-    "lastSuccessAt": "2026-09-03",
+    "lastAttemptAt": "2026-09-04",
+    "lastSuccessAt": "2026-09-04",
     "failStreak": 0,
     "lastError": null
   }
