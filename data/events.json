@@ -840,36 +840,6 @@
     "editorPick": false
   },
   {
-    "id": "DK-260701-0k4mfga",
-    "brandId": "B003",
-    "title": "해피앱 오늘의 찬스! 커피 1,000원 OFF!",
-    "summary": "해피앱 오늘의 찬스! 커피 1,000원 OFF!",
-    "description": "던킨 공식 이벤트 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
-    "type": "MEMBERSHIP",
-    "startDate": "2026-07-01",
-    "endDate": "2026-09-30",
-    "createdAt": "2026-09-23",
-    "originalPrice": null,
-    "salePrice": null,
-    "conditions": "자세한 조건은 던킨 공식 이벤트 페이지에서 확인해 주세요.",
-    "couponRequired": false,
-    "membershipRequired": true,
-    "paymentCondition": null,
-    "onlineOnly": false,
-    "offlineOnly": false,
-    "applicableStores": "ALL_STORES",
-    "relatedBreadIds": [],
-    "tags": [
-      "던킨",
-      "공식"
-    ],
-    "sourceName": "던킨 공식 이벤트",
-    "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-09-30",
-    "verificationStatus": "VERIFIED",
-    "editorPick": false
-  },
-  {
     "id": "DK-260902-07z4vo6",
     "brandId": "B003",
     "title": "매주 수요일, 해피오더로 1.2만원 이상 픽업 구매 시, 5천원 OFF!",
