@@ -37,16 +37,16 @@
   "BN-": {
     "name": "브레댄코 공식",
     "lastAttemptAt": "2026-09-30",
-    "lastSuccessAt": "2026-08-24",
-    "failStreak": 39,
-    "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON"
+    "lastSuccessAt": "2026-09-30",
+    "failStreak": 0,
+    "lastError": null
   },
   "PC-": {
     "name": "파리크라상 공식",
     "lastAttemptAt": "2026-09-30",
-    "lastSuccessAt": "2026-08-24",
-    "failStreak": 38,
-    "lastError": "오류 없이 0건"
+    "lastSuccessAt": "2026-09-30",
+    "failStreak": 0,
+    "lastError": null
   },
   "DC-": {
     "name": "떡보의하루 공식",
