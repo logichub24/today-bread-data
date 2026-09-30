@@ -66,6 +66,17 @@ const failedPrefixes = new Set();
 const verifiedEmpty = new Set();
 /** 출처별 이번 실행 결과. 실패해도 기존 데이터를 지키므로 낡는 것을 여기로 알린다. */
 const health = await readHealth();
+/**
+ * 이번 실행이 시작되기 전의 기록.
+ *
+ * '조용한 0건' 판정은 수집이 끝난 **뒤**에 나온다. 그때는 이미 이 실행의 성공 기록이
+ * health에 올라가 있어서, 거기서 실패를 덮으면 방금 쓴 오늘 날짜가 '마지막 성공일'로
+ * 남는다. 파리크라상이 5주 넘게 0건이었는데 나이가 계속 0일이고 연속 실패도 1에
+ * 멈춰 있던 이유다 — 지연 알림이 아예 켜지지 않았다.
+ *
+ * 실패를 기록할 때는 이 실행 이전의 상태에서 이어 붙여야 한다.
+ */
+const healthBefore = structuredClone(health);
 
 // --- 홈플러스 전단 (몽블랑제) ---
 try {
@@ -162,12 +173,11 @@ for (const prefix of OWNED_PREFIXES) {
   if (countBy(collected, prefix) === 0 && countBy(existing, prefix) > 0) {
     console.error(`  ${prefix} 수집 0건 — 어제는 있었습니다. 차단일 수 있어 기존 것을 남깁니다.`);
     failedPrefixes.add(prefix);
-    record(health, prefix, {
-      name: health[prefix]?.name ?? prefix,
-      ok: false,
-      error: '오류 없이 0건',
-      today: collectedAt,
-    });
+    // 이번 실행의 성공 기록을 되돌린 뒤 실패로 남긴다. 그러지 않으면 마지막 성공일이
+    // 오늘로 덮여 데이터가 며칠째 낡았는지 알 수 없게 된다.
+    const name = health[prefix]?.name ?? prefix;
+    health[prefix] = healthBefore[prefix];
+    record(health, prefix, { name, ok: false, error: '오류 없이 0건', today: collectedAt });
   }
 }
 
