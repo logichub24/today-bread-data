@@ -17,6 +17,15 @@ const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 1
 const daysBetween = (from, to) =>
   Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000);
 
+/**
+ * 끝난 행사인가.
+ *
+ * 종료일이 없는 건은 상시 행사이므로 끝나지 않았다. 문자열 비교에 null을 그대로 넣으면
+ * 숫자 비교로 바뀌어 양쪽 다 false가 되는데, 만료 판정은 그 덕에 우연히 맞았지만
+ * 진행 건수 집계에서는 상시 행사 2건이 조용히 빠져 37/39로 나왔다.
+ */
+const isExpired = (e) => e.endDate != null && e.endDate < today;
+
 const events = JSON.parse(await readFile(EVENTS_PATH, 'utf8'));
 
 let expired = 0;
@@ -25,7 +34,7 @@ let flagged = 0;
 const updated = events.map((e) => {
   const next = { ...e };
 
-  if (e.endDate < today) {
+  if (isExpired(e)) {
     if (e.verificationStatus !== 'EXPIRED') {
       next.verificationStatus = 'EXPIRED';
       expired += 1;
@@ -41,7 +50,7 @@ const updated = events.map((e) => {
   return next;
 });
 
-const active = updated.filter((e) => e.endDate >= today).length;
+const active = updated.filter((e) => !isExpired(e)).length;
 const needCheck = updated.filter((e) => e.verificationStatus === 'CHECK_NEEDED').length;
 
 console.log(`오늘 ${today} 기준`);
