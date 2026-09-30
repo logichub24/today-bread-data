@@ -136,6 +136,10 @@ for (const src of [
     for (const e of review) needsReview.push(`${src.brandName} · ${e.title}`);
     collected.push(...events);
     record(health, `${ID_PREFIX[src.brandId]}-`, { name: `${src.brandName} 공식`, ok: true, today: collectedAt });
+    // 원문을 받아 왔다면 출처는 멀쩡하다. 그 안에 진행 중인 것이 없는 것은 사실이므로
+    // 아래 '조용한 0건' 판정에서 빼 준다. 홈플러스 전단과 같은 이유다.
+    // 이게 없으면 행사가 전부 끝난 브랜드가 영구히 실패로 찍히고 끝난 행사를 계속 붙잡는다.
+    if (raw.length > 0) verifiedEmpty.add(`${ID_PREFIX[src.brandId]}-`);
   } catch (err) {
     console.error(`  ${src.brandName} 실패: ${err.message}`);
     failedPrefixes.add(`${ID_PREFIX[src.brandId]}-`);
