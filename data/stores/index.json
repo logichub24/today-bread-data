@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04",
-  "total": 20268,
+  "generatedAt": "2026-10-05",
+  "total": 20267,
   "regions": [
     {
       "slug": "gyeonggi",
@@ -32,7 +32,7 @@
     {
       "slug": "jeonnam-gwangju",
       "name": "전남광주통합특별시",
-      "count": 1217,
+      "count": 1216,
       "minLat": 34.17674,
       "maxLat": 35.429656,
       "minLng": 125.93003,
