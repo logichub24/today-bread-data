@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-05",
-  "total": 20267,
+  "generatedAt": "2026-10-06",
+  "total": 20264,
   "regions": [
     {
       "slug": "gyeonggi",
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4259,
+      "count": 4258,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
@@ -32,7 +32,7 @@
     {
       "slug": "jeonnam-gwangju",
       "name": "전남광주통합특별시",
-      "count": 1216,
+      "count": 1215,
       "minLat": 34.17674,
       "maxLat": 35.429656,
       "minLng": 125.93003,
@@ -50,7 +50,7 @@
     {
       "slug": "gyeongbuk",
       "name": "경상북도",
-      "count": 1101,
+      "count": 1100,
       "minLat": 35.593802,
       "maxLat": 37.500737,
       "minLng": 127.94844,
