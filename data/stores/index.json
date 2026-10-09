@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-09",
-  "total": 20278,
+  "generatedAt": "2026-10-10",
+  "total": 20300,
   "regions": [
     {
       "slug": "gyeonggi",
       "name": "경기도",
-      "count": 4558,
+      "count": 4562,
       "minLat": 36.958343,
       "maxLat": 38.181273,
       "minLng": 126.543235,
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4262,
+      "count": 4268,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
@@ -32,7 +32,7 @@
     {
       "slug": "jeonnam-gwangju",
       "name": "전남광주통합특별시",
-      "count": 1215,
+      "count": 1216,
       "minLat": 34.17674,
       "maxLat": 35.429656,
       "minLng": 125.93003,
@@ -41,7 +41,7 @@
     {
       "slug": "busan",
       "name": "부산광역시",
-      "count": 1198,
+      "count": 1197,
       "minLat": 35.04508969956558,
       "maxLat": 35.365355,
       "minLng": 128.8071984934235,
@@ -50,7 +50,7 @@
     {
       "slug": "gyeongbuk",
       "name": "경상북도",
-      "count": 1096,
+      "count": 1098,
       "minLat": 35.593802,
       "maxLat": 37.500737,
       "minLng": 127.94844,
@@ -68,7 +68,7 @@
     {
       "slug": "incheon",
       "name": "인천광역시",
-      "count": 961,
+      "count": 962,
       "minLat": 37.260085,
       "maxLat": 37.968649,
       "minLng": 124.668362,
@@ -77,7 +77,7 @@
     {
       "slug": "chungnam",
       "name": "충청남도",
-      "count": 919,
+      "count": 923,
       "minLat": 36.011149,
       "maxLat": 37.013063,
       "minLng": 126.230343,
@@ -86,7 +86,7 @@
     {
       "slug": "gangwon",
       "name": "강원특별자치도",
-      "count": 731,
+      "count": 735,
       "minLat": 37.101819,
       "maxLat": 38.447318,
       "minLng": 127.216134,
@@ -104,7 +104,7 @@
     {
       "slug": "jeonbuk",
       "name": "전북특별자치도",
-      "count": 638,
+      "count": 639,
       "minLat": 35.339188,
       "maxLat": 36.118089,
       "minLng": 125.981944,
