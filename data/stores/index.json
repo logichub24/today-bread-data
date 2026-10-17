@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-17",
-  "total": 20360,
+  "generatedAt": "2026-10-18",
+  "total": 20375,
   "regions": [
     {
       "slug": "gyeonggi",
       "name": "경기도",
-      "count": 4563,
+      "count": 4566,
       "minLat": 36.958343,
       "maxLat": 38.181273,
       "minLng": 126.543235,
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4280,
+      "count": 4282,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
@@ -23,7 +23,7 @@
     {
       "slug": "gyeongnam",
       "name": "경상남도",
-      "count": 1277,
+      "count": 1279,
       "minLat": 34.728648,
       "maxLat": 35.749689,
       "minLng": 127.623398,
@@ -32,7 +32,7 @@
     {
       "slug": "jeonnam-gwangju",
       "name": "전남광주통합특별시",
-      "count": 1210,
+      "count": 1212,
       "minLat": 34.17674,
       "maxLat": 35.429656,
       "minLng": 125.93003,
@@ -41,7 +41,7 @@
     {
       "slug": "busan",
       "name": "부산광역시",
-      "count": 1197,
+      "count": 1198,
       "minLat": 35.04508969956558,
       "maxLat": 35.365355,
       "minLng": 128.8071984934235,
@@ -50,7 +50,7 @@
     {
       "slug": "gyeongbuk",
       "name": "경상북도",
-      "count": 1099,
+      "count": 1100,
       "minLat": 35.593802,
       "maxLat": 37.500737,
       "minLng": 127.94844,
@@ -68,7 +68,7 @@
     {
       "slug": "incheon",
       "name": "인천광역시",
-      "count": 965,
+      "count": 962,
       "minLat": 37.260085,
       "maxLat": 37.968649,
       "minLng": 124.668362,
@@ -86,7 +86,7 @@
     {
       "slug": "gangwon",
       "name": "강원특별자치도",
-      "count": 724,
+      "count": 727,
       "minLat": 37.101819,
       "maxLat": 38.447318,
       "minLng": 127.216134,
@@ -111,22 +111,22 @@
       "maxLng": 127.787454
     },
     {
-      "slug": "chungbuk",
-      "name": "충청북도",
-      "count": 622,
-      "minLat": 36.122942,
-      "maxLat": 37.170807,
-      "minLng": 127.313848,
-      "maxLng": 128.370113
-    },
-    {
       "slug": "jeju",
       "name": "제주특별자치도",
-      "count": 619,
+      "count": 624,
       "minLat": 33.209882,
       "maxLat": 33.563511,
       "minLng": 126.168618,
       "maxLng": 126.945111
+    },
+    {
+      "slug": "chungbuk",
+      "name": "충청북도",
+      "count": 621,
+      "minLat": 36.122942,
+      "maxLat": 37.170807,
+      "minLng": 127.313848,
+      "maxLng": 128.370113
     },
     {
       "slug": "ulsan",
