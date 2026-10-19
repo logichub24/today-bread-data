@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19",
-  "total": 20388,
+  "generatedAt": "2026-10-20",
+  "total": 20379,
   "regions": [
     {
       "slug": "gyeonggi",
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4278,
+      "count": 4276,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
@@ -23,7 +23,7 @@
     {
       "slug": "gyeongnam",
       "name": "경상남도",
-      "count": 1281,
+      "count": 1280,
       "minLat": 34.728648,
       "maxLat": 35.749689,
       "minLng": 127.623398,
@@ -32,7 +32,7 @@
     {
       "slug": "jeonnam-gwangju",
       "name": "전남광주통합특별시",
-      "count": 1214,
+      "count": 1213,
       "minLat": 34.17674,
       "maxLat": 35.429656,
       "minLng": 125.93003,
@@ -41,7 +41,7 @@
     {
       "slug": "busan",
       "name": "부산광역시",
-      "count": 1199,
+      "count": 1198,
       "minLat": 35.04508969956558,
       "maxLat": 35.365355,
       "minLng": 128.8071984934235,
@@ -50,7 +50,7 @@
     {
       "slug": "gyeongbuk",
       "name": "경상북도",
-      "count": 1101,
+      "count": 1100,
       "minLat": 35.593802,
       "maxLat": 37.500737,
       "minLng": 127.94844,
@@ -86,7 +86,7 @@
     {
       "slug": "gangwon",
       "name": "강원특별자치도",
-      "count": 731,
+      "count": 729,
       "minLat": 37.101819,
       "maxLat": 38.447318,
       "minLng": 127.216134,
@@ -140,7 +140,7 @@
     {
       "slug": "sejong",
       "name": "세종특별자치시",
-      "count": 145,
+      "count": 144,
       "minLat": 36.439733,
       "maxLat": 36.732319,
       "minLng": 127.151042,
