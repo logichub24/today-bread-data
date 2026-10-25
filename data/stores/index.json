@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-25",
-  "total": 20410,
+  "generatedAt": "2026-10-26",
+  "total": 20409,
   "regions": [
     {
       "slug": "gyeonggi",
       "name": "경기도",
-      "count": 4582,
+      "count": 4581,
       "minLat": 36.958343,
       "maxLat": 38.181273,
       "minLng": 126.543235,
