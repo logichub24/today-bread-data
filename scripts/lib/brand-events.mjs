@@ -75,8 +75,13 @@ export async function fetchDunkinEvents() {
     const html = await res.text();
     // "2026. 08. 07 ~ 2026. 12. 25" 형태다.
     const re = /(\d{4}\.\s*\d{2}\.\s*\d{2})\s*~\s*(\d{4}\.\s*\d{2}\.\s*\d{2})/;
+    const found = pairTitlesWithPeriods(toSegments(html), re);
+    // 탭 하나가 조용히 0건이면 그 탭의 행사만 소리 없이 사라진다. 실제로 러너에서
+    // 제휴 탭(flag=B)이 200을 주면서 0건으로 와, 멤버십·카드 혜택 7건이 지워졌다.
+    // 브랜드 전체가 0건일 때만 걸리는 안전망은 부분 손실을 못 잡는다. 탭 단위로 막는다.
+    if (found.length === 0) throw new Error(`던킨 ${url} 응답은 정상인데 0건`);
     out.push(
-      ...pairTitlesWithPeriods(toSegments(html), re).map((e) => ({
+      ...found.map((e) => ({
         ...e,
         start: normalizeDate(e.start),
         end: normalizeDate(e.end),
