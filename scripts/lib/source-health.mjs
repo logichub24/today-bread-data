@@ -42,7 +42,7 @@ export async function writeHealth(health) {
  * 성공하면 마지막 성공일을 오늘로 올리고 연속 실패를 0으로 되돌린다.
  * 실패하면 마지막 성공일은 **건드리지 않는다** — 그 날짜가 곧 데이터의 나이다.
  */
-export function record(health, key, { name, ok, error, today }) {
+export function record(health, key, { name, ok, error, today, count }) {
   const prev = health[key] ?? {};
   health[key] = {
     name,
@@ -50,8 +50,34 @@ export function record(health, key, { name, ok, error, today }) {
     lastSuccessAt: ok ? today : (prev.lastSuccessAt ?? null),
     failStreak: ok ? 0 : (prev.failStreak ?? 0) + 1,
     lastError: ok ? null : (error ?? '알 수 없는 오류'),
+    // 이번에 몇 건을 받았나. 다음 실행이 이 숫자와 비교해 급감을 알아챈다.
+    // 실패한 실행의 0건으로 덮으면 다음날 비교 기준이 사라지므로 성공할 때만 적는다.
+    lastCount: ok && count != null ? count : (prev.lastCount ?? null),
   };
   return health;
+}
+
+/**
+ * 어제보다 이만큼 넘게 줄면 알린다.
+ *
+ * 건수만으로는 "정상 만료"와 "일부 수집 실패"를 구분할 수 없다. 그래서 실패로
+ * 찍지 않고 알리기만 한다. 던킨 제휴 탭이 조용히 0건으로 와 7건이 지워졌을 때
+ * 브랜드 전체는 9건이 남아 모든 점검이 초록불이었다 — 6주 동안 아무도 몰랐다.
+ */
+export const DROP_RATIO = 0.3;
+/** 건수가 적은 출처는 1~2건 변동이 흔하므로 비율 비교가 의미 없다. */
+export const DROP_MIN_BASE = 3;
+
+/** 어제 대비 급감한 출처를 골라낸다. prevHealth는 이번 실행이 시작되기 전의 기록이다. */
+export function drops(prevHealth, counts) {
+  const out = [];
+  for (const [key, now] of Object.entries(counts)) {
+    const before = prevHealth[key]?.lastCount;
+    if (before == null || before < DROP_MIN_BASE) continue;
+    if (now >= before * (1 - DROP_RATIO)) continue;
+    out.push({ key, name: prevHealth[key]?.name ?? key, before, now });
+  }
+  return out;
 }
 
 /** 마지막 성공으로부터 며칠 지났나. 한 번도 성공한 적 없으면 null. */

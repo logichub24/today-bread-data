@@ -33,7 +33,7 @@ import {
   fetchTljEvents,
   toEvents as toBrandEvents,
 } from './lib/brand-events.mjs';
-import { readHealth, record, writeHealth } from './lib/source-health.mjs';
+import { drops, readHealth, record, writeHealth } from './lib/source-health.mjs';
 
 const EVENTS_PATH = fileURLToPath(new URL('../data/events.json', import.meta.url));
 /** 이 스크립트가 소유하는 행사의 id 접두사. 나머지는 손으로 등록한 것이다. */
@@ -89,7 +89,7 @@ try {
   collected.push(...events);
   // 상품을 실제로 받아 왔다면 전단은 멀쩡하다. 그 안에 몽블랑제가 없는 것은 사실이다.
   if (items.length > 0) verifiedEmpty.add('HP-');
-  record(health, 'HP-', { name: '몽블랑제(홈플러스 전단)', ok: true, today: collectedAt });
+  record(health, 'HP-', { name: '몽블랑제(홈플러스 전단)', ok: true, today: collectedAt, count: events.length });
 } catch (err) {
   // 한 출처가 막혀도 다른 출처는 진행한다. 실패한 것은 기존 데이터를 남긴다.
   console.error(`  홈플러스 전단 실패: ${err.message}`);
@@ -103,7 +103,7 @@ try {
   console.log(`파리바게뜨 공식 → 진행 중 ${events.length}건`);
   for (const e of events) console.log(`    ${e.startDate}~${e.endDate}  ${e.title.slice(0, 40)}`);
   collected.push(...events);
-  record(health, 'PB-', { name: '파리바게뜨 공식', ok: true, today: collectedAt });
+  record(health, 'PB-', { name: '파리바게뜨 공식', ok: true, today: collectedAt, count: events.length });
 } catch (err) {
   console.error(`  파리바게뜨 실패: ${err.message}`);
   failedPrefixes.add('PB-');
@@ -135,7 +135,12 @@ for (const src of [
     const review = raw.filter((e) => e.needsReview);
     for (const e of review) needsReview.push(`${src.brandName} · ${e.title}`);
     collected.push(...events);
-    record(health, `${ID_PREFIX[src.brandId]}-`, { name: `${src.brandName} 공식`, ok: true, today: collectedAt });
+    record(health, `${ID_PREFIX[src.brandId]}-`, {
+      name: `${src.brandName} 공식`,
+      ok: true,
+      today: collectedAt,
+      count: events.length,
+    });
     // 원문을 받아 왔다면 출처는 멀쩡하다. 그 안에 진행 중인 것이 없는 것은 사실이므로
     // 아래 '조용한 0건' 판정에서 빼 준다. 홈플러스 전단과 같은 이유다.
     // 이게 없으면 행사가 전부 끝난 브랜드가 영구히 실패로 찍히고 끝난 행사를 계속 붙잡는다.
@@ -222,5 +227,21 @@ console.log(
 );
 console.log(`이번에 처음 본 행사 ${freshCount}건 (나머지는 처음 본 날짜를 유지했습니다)`);
 console.log(`(이전 수집분 ${previous}건 중 ${previous - kept.length}건을 교체했습니다)`);
+
+// 어제보다 크게 줄어든 출처를 알린다.
+//
+// 건수만으로는 '정상 만료'와 '일부 수집 실패'를 구분할 수 없어 실패로 찍지 않는다.
+// 그래도 줄었다는 사실이 보이기만 하면 사람이 하루 안에 확인할 수 있다. 던킨 제휴
+// 탭이 조용히 비었을 때 모든 점검이 초록불이라 6주를 넘겼던 것이 이 장치가 없어서였다.
+const counts = Object.fromEntries(OWNED_PREFIXES.map((p) => [p, countBy(collected, p)]));
+const dropped = drops(healthBefore, counts);
+if (dropped.length > 0) {
+  console.log('');
+  for (const d of dropped) {
+    const pct = Math.round((1 - d.now / d.before) * 100);
+    console.log(`::warning::${d.name} 수집 건수 급감 — ${d.before}건 → ${d.now}건 (${pct}% 감소)`);
+  }
+  console.log('  정상 만료일 수도 있고 일부 수집 실패일 수도 있습니다. 출처를 확인하세요.');
+}
 
 await writeHealth(health);

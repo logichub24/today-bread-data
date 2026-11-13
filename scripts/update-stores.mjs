@@ -17,7 +17,7 @@ import { loadGeocodeCache } from './lib/geocode-cache.mjs';
 import { readAllStores } from './lib/read-stores.mjs';
 import { writeRegionFiles } from './lib/split-stores.mjs';
 import { fetchWithRetry } from './lib/http.mjs';
-import { readHealth, record, writeHealth } from './lib/source-health.mjs';
+import { drops, readHealth, record, writeHealth } from './lib/source-health.mjs';
 
 const STORE_DIR = fileURLToPath(new URL('../data/stores', import.meta.url));
 
@@ -39,6 +39,8 @@ console.log(`매장 갱신 시작 (${collectedAt} KST, ${REGION ?? '전국'})`);
 console.log(`내려받는 중: ${DOWNLOAD_URL}`);
 
 const health = await readHealth();
+/** 급감 비교의 기준. 이번 실행의 기록으로 덮이기 전 상태다. */
+const healthBefore = structuredClone(health);
 
 /** 실패해도 기존 데이터는 그대로 둔다. 앱이 빈 지도가 되면 안 된다. */
 async function giveUp(reason) {
@@ -83,5 +85,20 @@ const branded = stores.filter((s) => s.brandId).length;
 console.log(`반영 완료 — 브랜드 매장 ${branded.toLocaleString('ko-KR')}곳, 동네빵집 ${(stores.length - branded).toLocaleString('ko-KR')}곳`);
 console.log(`이전 ${existing.length.toLocaleString('ko-KR')}곳 → 현재 ${stores.length.toLocaleString('ko-KR')}곳 · 지역 ${index.regions.length}개`);
 
-record(health, 'stores', { name: '매장(LOCALDATA)', ok: true, today: collectedAt });
+record(health, 'stores', {
+  name: '매장(LOCALDATA)',
+  ok: true,
+  today: collectedAt,
+  count: stores.length,
+});
+
+// 매장이 어제보다 크게 줄면 알린다. 전국 CSV가 일부만 내려왔을 수 있다.
+// 실패로 찍지는 않는다 — 폐업 반영으로 줄어드는 것도 정상이기 때문이다.
+const [drop] = drops(healthBefore, { stores: stores.length });
+if (drop) {
+  const pct = Math.round((1 - drop.now / drop.before) * 100);
+  console.log(
+    `::warning::${drop.name} 건수 급감 — ${drop.before.toLocaleString('ko-KR')}곳 → ${drop.now.toLocaleString('ko-KR')}곳 (${pct}% 감소)`,
+  );
+}
 await writeHealth(health);
