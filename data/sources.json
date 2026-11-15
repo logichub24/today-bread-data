@@ -1,64 +1,64 @@
 {
   "stores": {
     "name": "매장(LOCALDATA)",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
-    "lastCount": 20310
+    "lastCount": 20330
   },
   "HP-": {
     "name": "몽블랑제(홈플러스 전단)",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
     "lastCount": 3
   },
   "PB-": {
     "name": "파리바게뜨 공식",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
     "lastCount": 24
   },
   "TL-": {
     "name": "뚜레쥬르 공식",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
-    "lastCount": 2
+    "lastCount": 3
   },
   "DK-": {
     "name": "던킨 공식",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
-    "lastCount": 16
+    "lastCount": 15
   },
   "BN-": {
     "name": "브레댄코 공식",
-    "lastAttemptAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
     "lastSuccessAt": "2026-11-13",
-    "failStreak": 3,
+    "failStreak": 4,
     "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON",
     "lastCount": 0
   },
   "PC-": {
     "name": "파리크라상 공식",
-    "lastAttemptAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
     "lastSuccessAt": "2026-11-13",
-    "failStreak": 3,
+    "failStreak": 4,
     "lastError": "오류 없이 0건",
     "lastCount": 1
   },
   "DC-": {
     "name": "떡보의하루 공식",
-    "lastAttemptAt": "2026-11-15",
-    "lastSuccessAt": "2026-11-15",
+    "lastAttemptAt": "2026-11-16",
+    "lastSuccessAt": "2026-11-16",
     "failStreak": 0,
     "lastError": null,
     "lastCount": 1
