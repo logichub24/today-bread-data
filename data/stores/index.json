@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18",
-  "total": 20320,
+  "generatedAt": "2026-11-19",
+  "total": 20322,
   "regions": [
     {
       "slug": "gyeonggi",
       "name": "경기도",
-      "count": 4581,
+      "count": 4583,
       "minLat": 36.958343,
       "maxLat": 38.181273,
       "minLng": 126.543235,
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4330,
+      "count": 4335,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
@@ -23,7 +23,7 @@
     {
       "slug": "gyeongnam",
       "name": "경상남도",
-      "count": 1284,
+      "count": 1283,
       "minLat": 34.728648,
       "maxLat": 35.749689,
       "minLng": 127.623398,
@@ -41,7 +41,7 @@
     {
       "slug": "busan",
       "name": "부산광역시",
-      "count": 1193,
+      "count": 1195,
       "minLat": 35.04508969956558,
       "maxLat": 35.365355,
       "minLng": 128.8071984934235,
@@ -59,7 +59,7 @@
     {
       "slug": "daegu",
       "name": "대구광역시",
-      "count": 1000,
+      "count": 993,
       "minLat": 35.644466,
       "maxLat": 36.240854,
       "minLng": 128.409022,
@@ -68,7 +68,7 @@
     {
       "slug": "incheon",
       "name": "인천광역시",
-      "count": 968,
+      "count": 967,
       "minLat": 37.260085,
       "maxLat": 37.968649,
       "minLng": 124.668362,
@@ -86,7 +86,7 @@
     {
       "slug": "gangwon",
       "name": "강원특별자치도",
-      "count": 709,
+      "count": 710,
       "minLat": 37.101819,
       "maxLat": 38.447318,
       "minLng": 127.216134,
@@ -104,7 +104,7 @@
     {
       "slug": "jeonbuk",
       "name": "전북특별자치도",
-      "count": 639,
+      "count": 638,
       "minLat": 35.339188,
       "maxLat": 36.118089,
       "minLng": 125.981944,
@@ -113,7 +113,7 @@
     {
       "slug": "jeju",
       "name": "제주특별자치도",
-      "count": 625,
+      "count": 626,
       "minLat": 33.209882,
       "maxLat": 33.563511,
       "minLng": 126.168618,
@@ -122,7 +122,7 @@
     {
       "slug": "chungbuk",
       "name": "충청북도",
-      "count": 619,
+      "count": 620,
       "minLat": 36.122942,
       "maxLat": 37.170807,
       "minLng": 127.313848,
