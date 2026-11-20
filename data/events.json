@@ -30,15 +30,15 @@
     "editorPick": false
   },
   {
-    "id": "PB-%e2%98%83%ef%b8%8f%ea%b2%a8%ec%9a%b8%ec%9d%84-%ed%8c%9d%e",
+    "id": "PB-2026_pb_magic_mug",
     "brandId": "B001",
-    "title": "☃️겨울을 팝하게! 케이크 3종 사전예약 최대 30%💙",
-    "summary": "☃️겨울을 팝하게! 케이크 3종 사전예약 최대 30%💙",
+    "title": "PLAY윈터팝▶ 변온 매직 머그컵☃️ 4,900원💙",
+    "summary": "PLAY윈터팝▶ 변온 매직 머그컵☃️ 4,900원💙",
     "description": "파리바게뜨 공식 프로모션 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
-    "type": "DISCOUNT",
-    "startDate": "2026-11-09",
-    "endDate": "2027-01-31",
-    "createdAt": "2026-11-19",
+    "type": "SEASON",
+    "startDate": "2026-11-24",
+    "endDate": "2026-12-01",
+    "createdAt": "2026-11-20",
     "originalPrice": null,
     "salePrice": null,
     "conditions": "자세한 조건은 파리바게뜨 공식 프로모션 페이지에서 확인해 주세요.",
@@ -54,8 +54,8 @@
       "공식"
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
-    "sourceUrl": "https://www.paris.co.kr/promotion/%e2%98%83%ef%b8%8f%ea%b2%a8%ec%9a%b8%ec%9d%84-%ed%8c%9d%ed%95%98%ea%b2%8c-%ec%bc%80%ec%9d%b4%ed%81%ac-3%ec%a2%85-%ec%82%ac%ec%a0%84%ec%98%88%ec%95%bd-%ec%b5%9c%eb%8c%80-30%f0%9f%92%99/",
-    "verifiedAt": "2026-11-19",
+    "sourceUrl": "https://www.paris.co.kr/promotion/2026_pb_magic_mug/",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -85,7 +85,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb-benefit-nov-2026/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -115,7 +115,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/holiday-2026-preorder/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -145,7 +145,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/holiday-2026-oder/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -175,20 +175,20 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/choco-deep-pb-event/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
   {
-    "id": "PB-2026-lucky-present",
+    "id": "PB-buy-silkyrollcake-get-walnutpoundcake-nov-2026",
     "brandId": "B001",
-    "title": "🎯수험생에게 🍀행운을 선물하세요✨",
-    "summary": "🎯수험생에게 🍀행운을 선물하세요✨",
+    "title": "🐝우리 벌꿀 카스테라 구매 시, 🍞호두파운드 케익 증정!",
+    "summary": "🐝우리 벌꿀 카스테라 구매 시, 🍞호두파운드 케익 증정!",
     "description": "파리바게뜨 공식 프로모션 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
-    "type": "SEASON",
-    "startDate": "2026-10-27",
-    "endDate": "2026-11-20",
-    "createdAt": "2026-10-28",
+    "type": "GIFT",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-30",
+    "createdAt": "2026-11-20",
     "originalPrice": null,
     "salePrice": null,
     "conditions": "자세한 조건은 파리바게뜨 공식 프로모션 페이지에서 확인해 주세요.",
@@ -204,8 +204,8 @@
       "공식"
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
-    "sourceUrl": "https://www.paris.co.kr/promotion/2026-lucky-present/",
-    "verifiedAt": "2026-11-19",
+    "sourceUrl": "https://www.paris.co.kr/promotion/buy-silkyrollcake-get-walnutpoundcake-nov-2026/",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -235,7 +235,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/paran-label-new-product/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -265,7 +265,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb_new_product_cheese/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -295,7 +295,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/lets-pb-go-product/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -325,7 +325,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/catering-box-service/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -355,7 +355,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb-lafc-product-2/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -385,7 +385,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb-blue-label-product/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -415,7 +415,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/cafe-de-dessert/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -445,7 +445,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb-blue-label-matcha/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -475,7 +475,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/bite-bread/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -505,7 +505,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pb-with-lafc/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -535,7 +535,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pbxkdh-golden/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -565,7 +565,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pbxkdh-sodapop/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -595,7 +595,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pbxkdh-derpy/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -625,7 +625,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/pbxkdh-all/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -655,7 +655,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/low-sugar-matcha-latte-corn-latte/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -685,7 +685,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/paran-label-hot-sandwiches/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -715,7 +715,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/2025-cafe-adagio/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -745,7 +745,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/paran-label-castella/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -775,7 +775,7 @@
     ],
     "sourceName": "파리바게뜨 공식 프로모션",
     "sourceUrl": "https://www.paris.co.kr/promotion/paran-label/",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -805,7 +805,7 @@
     ],
     "sourceName": "뚜레쥬르 공식 이벤트",
     "sourceUrl": "https://www.tlj.co.kr:7008/community/event_tpl/list.asp",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -835,7 +835,7 @@
     ],
     "sourceName": "뚜레쥬르 공식 이벤트",
     "sourceUrl": "https://www.tlj.co.kr:7008/community/event_tpl/list.asp",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -865,7 +865,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -895,7 +895,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -925,7 +925,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -955,7 +955,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -985,7 +985,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1015,7 +1015,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1045,7 +1045,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1075,7 +1075,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=A",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1105,7 +1105,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1135,7 +1135,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1165,7 +1165,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1195,7 +1195,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1225,7 +1225,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1255,7 +1255,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1285,7 +1285,7 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -1315,7 +1315,7 @@
     ],
     "sourceName": "떡보의하루 공식 이벤트",
     "sourceUrl": "https://www.dcake.co.kr/mania_event.asp",
-    "verifiedAt": "2026-11-19",
+    "verifiedAt": "2026-11-20",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   }
