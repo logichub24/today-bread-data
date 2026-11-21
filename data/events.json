@@ -1,17 +1,17 @@
 [
   {
-    "id": "PC-260801-1azl9v3",
-    "brandId": "B006",
-    "title": "스마트 스토어 첫 주문 혜택",
-    "summary": "스마트 스토어 첫 주문 혜택",
-    "description": "파리크라상 공식 이벤트 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
-    "type": "SEASON",
-    "startDate": "2026-08-01",
-    "endDate": null,
-    "createdAt": "2026-08-17",
+    "id": "PB-pb_ksat_261122",
+    "brandId": "B001",
+    "title": "11/22(일), 단 하루! 수험생 대상 🤎초코쫀득츄러스 1+1 혜택💙",
+    "summary": "11/22(일), 단 하루! 수험생 대상 🤎초코쫀득츄러스 1+1 혜택💙",
+    "description": "파리바게뜨 공식 프로모션 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
+    "type": "ONE_PLUS_ONE",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22",
+    "createdAt": "2026-11-21",
     "originalPrice": null,
     "salePrice": null,
-    "conditions": "자세한 조건은 파리크라상 공식 이벤트 페이지에서 확인해 주세요.",
+    "conditions": "자세한 조건은 파리바게뜨 공식 프로모션 페이지에서 확인해 주세요.",
     "couponRequired": false,
     "membershipRequired": false,
     "paymentCondition": null,
@@ -20,12 +20,12 @@
     "applicableStores": "ALL_STORES",
     "relatedBreadIds": [],
     "tags": [
-      "파리크라상",
+      "파리바게뜨",
       "공식"
     ],
-    "sourceName": "파리크라상 공식",
-    "sourceUrl": "https://pariscroissantorder.com/board/gallery/list.html?board_no=8",
-    "verifiedAt": "2026-11-13",
+    "sourceName": "파리바게뜨 공식 프로모션",
+    "sourceUrl": "https://www.paris.co.kr/promotion/pb_ksat_261122/",
+    "verifiedAt": "2026-11-21",
     "verificationStatus": "VERIFIED",
     "editorPick": false
   },
@@ -198,7 +198,10 @@
     "onlineOnly": false,
     "offlineOnly": false,
     "applicableStores": "ALL_STORES",
-    "relatedBreadIds": [],
+    "relatedBreadIds": [
+      "BR015",
+      "BR079"
+    ],
     "tags": [
       "파리바게뜨",
       "공식"
@@ -378,7 +381,9 @@
     "onlineOnly": false,
     "offlineOnly": false,
     "applicableStores": "ALL_STORES",
-    "relatedBreadIds": [],
+    "relatedBreadIds": [
+      "BR077"
+    ],
     "tags": [
       "파리바게뜨",
       "공식"
@@ -738,7 +743,9 @@
     "onlineOnly": false,
     "offlineOnly": false,
     "applicableStores": "ALL_STORES",
-    "relatedBreadIds": [],
+    "relatedBreadIds": [
+      "BR015"
+    ],
     "tags": [
       "파리바게뜨",
       "공식"
@@ -1008,7 +1015,9 @@
     "onlineOnly": false,
     "offlineOnly": false,
     "applicableStores": "ALL_STORES",
-    "relatedBreadIds": [],
+    "relatedBreadIds": [
+      "BR017"
+    ],
     "tags": [
       "던킨",
       "공식"
@@ -1285,6 +1294,36 @@
     ],
     "sourceName": "던킨 공식 이벤트",
     "sourceUrl": "https://www.dunkindonuts.co.kr/event?flag=B",
+    "verifiedAt": "2026-11-21",
+    "verificationStatus": "VERIFIED",
+    "editorPick": false
+  },
+  {
+    "id": "PC-260801-1azl9v3",
+    "brandId": "B006",
+    "title": "스마트 스토어 첫 주문 혜택",
+    "summary": "스마트 스토어 첫 주문 혜택",
+    "description": "파리크라상 공식 이벤트 페이지에 게시된 행사입니다. 자세한 내용은 출처 링크에서 확인하세요.",
+    "type": "SEASON",
+    "startDate": "2026-08-01",
+    "endDate": null,
+    "createdAt": "2026-08-17",
+    "originalPrice": null,
+    "salePrice": null,
+    "conditions": "자세한 조건은 파리크라상 공식 이벤트 페이지에서 확인해 주세요.",
+    "couponRequired": false,
+    "membershipRequired": false,
+    "paymentCondition": null,
+    "onlineOnly": false,
+    "offlineOnly": false,
+    "applicableStores": "ALL_STORES",
+    "relatedBreadIds": [],
+    "tags": [
+      "파리크라상",
+      "공식"
+    ],
+    "sourceName": "파리크라상 공식",
+    "sourceUrl": "https://pariscroissantorder.com/board/gallery/list.html?board_no=8",
     "verifiedAt": "2026-11-21",
     "verificationStatus": "VERIFIED",
     "editorPick": false

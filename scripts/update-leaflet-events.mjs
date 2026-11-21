@@ -202,10 +202,36 @@ const kept = existing.filter(
 // 실제로 첫 수집일에 40건이 한꺼번에 들어와 전부 새 행사로 표시됐다.
 // createdAt은 "우리가 처음 본 날"이어야지 "마지막으로 확인한 날"이 아니다.
 const firstSeen = new Map(existing.map((e) => [e.id, e.createdAt]));
-const withFirstSeen = collected.map((e) =>
-  firstSeen.has(e.id) ? { ...e, createdAt: firstSeen.get(e.id) } : e,
+
+/**
+ * 사람이 정한 값은 기계가 지우지 않는다.
+ *
+ * 수집기는 매번 행사를 처음부터 다시 만든다. 그래서 관리자가 확인해 연결한
+ * `relatedBreadIds`가 다음 실행에서 빈 배열로 돌아간다. 연결을 확정한 다음 날
+ * 아무도 모르게 사라지는 셈이다 — 그 자리를 확인하려고 사람이 들인 시간이
+ * 통째로 없어진다.
+ *
+ * 수집기는 이 필드를 만들어 내지 못한다(§91). 그러니 기존 값이 있으면 그대로 잇는다.
+ */
+const HUMAN_OWNED = ['relatedBreadIds'];
+const humanValues = new Map(
+  existing.map((e) => [e.id, Object.fromEntries(HUMAN_OWNED.map((k) => [k, e[k]]))]),
 );
+
+const withFirstSeen = collected.map((e) => {
+  const next = firstSeen.has(e.id) ? { ...e, createdAt: firstSeen.get(e.id) } : { ...e };
+  const kept = humanValues.get(e.id);
+  if (kept) {
+    for (const key of HUMAN_OWNED) {
+      // 빈 배열로 덮어쓰지 않는다. 사람이 비운 것과 수집기가 안 채운 것은 구분되지 않지만,
+      // 지키는 쪽을 택한다 — 잃는 쪽은 되돌릴 수 없다.
+      if (Array.isArray(kept[key]) && kept[key].length > 0) next[key] = kept[key];
+    }
+  }
+  return next;
+});
 const freshCount = withFirstSeen.filter((e) => !firstSeen.has(e.id)).length;
+const linkedCount = withFirstSeen.filter((e) => (e.relatedBreadIds ?? []).length > 0).length;
 
 const next = [...manual, ...kept, ...withFirstSeen];
 await writeFile(EVENTS_PATH, `${JSON.stringify(next, null, 2)}\n`);
@@ -226,6 +252,7 @@ console.log(
   `반영 완료 — 직접 등록 ${manual.length}건 + 유지 ${kept.length}건 + 수집 ${collected.length}건 = ${next.length}건`,
 );
 console.log(`이번에 처음 본 행사 ${freshCount}건 (나머지는 처음 본 날짜를 유지했습니다)`);
+console.log(`빵이 연결된 행사 ${linkedCount}건 (관리자가 확인한 연결을 유지했습니다)`);
 console.log(`(이전 수집분 ${previous}건 중 ${previous - kept.length}건을 교체했습니다)`);
 
 // 어제보다 크게 줄어든 출처를 알린다.

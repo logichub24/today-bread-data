@@ -21,7 +21,7 @@
     "lastSuccessAt": "2026-11-21",
     "failStreak": 0,
     "lastError": null,
-    "lastCount": 25
+    "lastCount": 26
   },
   "TL-": {
     "name": "뚜레쥬르 공식",
@@ -42,17 +42,17 @@
   "BN-": {
     "name": "브레댄코 공식",
     "lastAttemptAt": "2026-11-21",
-    "lastSuccessAt": "2026-11-13",
-    "failStreak": 9,
-    "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON",
+    "lastSuccessAt": "2026-11-21",
+    "failStreak": 0,
+    "lastError": null,
     "lastCount": 0
   },
   "PC-": {
     "name": "파리크라상 공식",
     "lastAttemptAt": "2026-11-21",
-    "lastSuccessAt": "2026-11-13",
-    "failStreak": 9,
-    "lastError": "오류 없이 0건",
+    "lastSuccessAt": "2026-11-21",
+    "failStreak": 0,
+    "lastError": null,
     "lastCount": 1
   },
   "DC-": {
