@@ -43,7 +43,7 @@
     "name": "브레댄코 공식",
     "lastAttemptAt": "2026-11-22",
     "lastSuccessAt": "2026-11-21",
-    "failStreak": 2,
+    "failStreak": 3,
     "lastError": "Unexpected token '<', \"<html><bod\"... is not valid JSON",
     "lastCount": 0
   },
@@ -51,7 +51,7 @@
     "name": "파리크라상 공식",
     "lastAttemptAt": "2026-11-22",
     "lastSuccessAt": "2026-11-21",
-    "failStreak": 2,
+    "failStreak": 3,
     "lastError": "오류 없이 0건",
     "lastCount": 1
   },
