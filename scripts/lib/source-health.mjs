@@ -67,6 +67,14 @@ export function record(health, key, { name, ok, error, today, count }) {
 export const DROP_RATIO = 0.3;
 /** 건수가 적은 출처는 1~2건 변동이 흔하므로 비율 비교가 의미 없다. */
 export const DROP_MIN_BASE = 3;
+/**
+ * 비율과 함께 **몇 건이 줄었는지**도 본다.
+ *
+ * 비율만 보면 작은 출처에서 한 건만 바뀌어도 울린다. 실제로 뚜레쥬르가 3→2건이
+ * 되자 33% 감소로 경보가 떴는데, 행사 하나가 기간이 끝난 것뿐이었다. 그런 알림이
+ * 쌓이면 사람이 경보 자체를 안 보게 된다 — 장치가 없는 것과 같아진다.
+ */
+export const DROP_MIN_COUNT = 2;
 
 /** 어제 대비 급감한 출처를 골라낸다. prevHealth는 이번 실행이 시작되기 전의 기록이다. */
 export function drops(prevHealth, counts) {
@@ -74,6 +82,7 @@ export function drops(prevHealth, counts) {
   for (const [key, now] of Object.entries(counts)) {
     const before = prevHealth[key]?.lastCount;
     if (before == null || before < DROP_MIN_BASE) continue;
+    if (before - now < DROP_MIN_COUNT) continue;
     if (now >= before * (1 - DROP_RATIO)) continue;
     out.push({ key, name: prevHealth[key]?.name ?? key, before, now });
   }
