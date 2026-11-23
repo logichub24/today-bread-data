@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22",
-  "total": 20365,
+  "generatedAt": "2026-11-23",
+  "total": 20308,
   "regions": [
     {
       "slug": "gyeonggi",
@@ -14,7 +14,7 @@
     {
       "slug": "seoul",
       "name": "서울특별시",
-      "count": 4348,
+      "count": 4291,
       "minLat": 37.434302,
       "maxLat": 37.687082,
       "minLng": 126.802052,
